@@ -32,6 +32,9 @@ body{
   padding-right: 10%;
 }
 
+.overview{
+  padding-left: 10%;
+}
 
 h1{
   font-weight: bold;
@@ -39,7 +42,7 @@ h1{
 }
 
 p{
-  padding-left: 10%;
+
 }
 
 ul{
