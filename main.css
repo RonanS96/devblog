@@ -1,0 +1,75 @@
+object{
+  max-width: 100%;
+}
+
+body{
+  background-color: grey;
+}
+.nametitle{
+    font-size: 70px;
+}
+
+.subtitle{
+   text-align: center;
+}
+
+
+.item{
+  text-align: center;
+}
+
+.item-title{
+  font-weight: bold;
+}
+
+.date-posted{
+    font-style: italic;
+}
+
+.info{
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+h1{
+  font-weight: bold;
+  text-align: center;
+}
+
+p{
+  padding-left: 10%;
+}
+
+ul{
+    padding-right: 2%;
+}
+
+li{
+  display: inline;
+}
+
+.navbar{
+  text-align: right;
+  display: inline;
+  width: 100%;
+}
+
+.footer{
+  text-align: center;
+  display: inline;
+  width: 100%;
+}
+
+.proflinks{
+  align-items: center;
+  display: inline;
+  width: 100%;
+}
+
+.proflink{
+  align-items: center;
+  display: inline;
+  width: 100%;
+}
