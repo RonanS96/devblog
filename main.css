@@ -1,10 +1,7 @@
-object{
+html{
   max-width: 100%;
 }
 
-body{
-  background-color: grey;
-}
 .nametitle{
     font-size: 70px;
 }
@@ -13,9 +10,9 @@ body{
    text-align: center;
 }
 
-
 .item{
   text-align: center;
+  align-items: center;
 }
 
 .item-title{
@@ -53,10 +50,18 @@ li{
   display: inline;
 }
 
-.navbar{
-  text-align: right;
-  display: inline;
-  width: 100%;
+@media only screen and (max-width: 500px) {
+    .navbar {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar{
+    text-align: right;
+    display: inline;
+    width: 100%;
+  }
 }
 
 .footer{
