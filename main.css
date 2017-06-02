@@ -50,18 +50,10 @@ li{
   display: inline;
 }
 
-@media only screen and (max-width: 500px) {
-    .navbar {
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-  .navbar{
+.navbar{
     text-align: right;
     display: inline;
     width: 100%;
-  }
 }
 
 .footer{
