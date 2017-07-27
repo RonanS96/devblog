@@ -1,10 +1,8 @@
-  <!-- Template for all pages on the site.
-     - Ronan Smith, Last edit: 16.05.17 -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../main.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="../main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -27,60 +25,46 @@
         <li><a href="../education.html">Education</a></li>
         <li> | </li>
         <li><a href="../resources.html">Resources</a></li>
+        <li> | </li>
+        <li><a href="all.html">Projects</a></li>
       </ul>
     </div>
-    <!-- Navigation bar END -->
-    <h1 class="nametitle">My Personal Projects</h1>
-    <h4 class="subtitle">Personal projects I have worked on so far or am currently working on.</h4>
-    <h4 class="subtitle">For university related projects or coursework, click <a href="coursework.html">here</a>.</h4>
+    <!-- Template for navigation bar END -->
+    <h1 class="nametitle">Alexa Skill: Hearts Facts</h1>
+    <h3 class="subtitle">An Amazon Alexa skill which tells you interesting facts about Heart Of Midlothian F.C.</h3>
     <br>
-
-    <!-- The timeline is where each of the projects will be displayed -->
-    <div class="timeline">
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="blog.html">My Development Blog</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 16th May 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: Ongoing</div>
-        </div>
-        <div class="info">
-          A development blog to describe me and my work.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="mlibrary.html">Module Library</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 11th July 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: Ongoing</div>
-        </div>
-        <div class="info">
-          A collection of useful algorithms for searching, sorting and storing data.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="alexahearts.html">Alexa Skill: Hearts Facts</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 17th May 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 17th May 2017</div>
-        </div>
-        <div class="info">
-          An Alexa Skill which tells you interesting facts about Heart Of Midlothian F.C.
-        </div>
+    <div class="info">
+      <div>
+        <p class="info">
+            After seeing an advertisment for Alexa skills development on Facebook I thought I would give it a go.
+            First, I decided to do a tutorial provided on <a href="https://developer.amazon.com/alexa-skills-kit/start">this</a> page.
+            I selected the <a href="https://developer.amazon.com/alexa-skills-kit/tutorials/fact-skill-1">Fact Skill tutorial</a> and using
+            the information given in the tutorial and the template code I was able to create this skill.
+        </p>
+        <p class="info">
+            The skill I built is based around Heart of Midlothian Football Club and contains around 40 different facts
+            about the clubs history and honours as well as the great rivalry of the Edinburgh derby.  There were 6 steps
+            to the tutorial. First was getting things set up in the Amazon developer portal and creating a new Intent.
+            The intent had to be provided with key phrases which would prompt Alexa to reply, for example "Alexa, tell me
+            a hearts fact".  The next stage was to create a lambda function which stored the suitable replies. Step
+            three involved connecting the two, and steps 4 and 5 were testing and customising the skill.  Stage 6 was
+            applying for the skill to be certified and published, which I am now waiting to hear back from.  I hope that
+            this can be the first step of many in developing Amazon Alexa Skills.
+        </p>
+        <p class="info">
+            The source code for the intent (or Voice-User Interface) and the lambda function are available on Github.
+        </p>
       </div>
     </div>
-
+    <div class="info">
+      <ul>
+        <p>View this project on Github: </p><a class="proflink" href="https://github.com/RonanS96/AlexaHeartsFacts" style="text-decoration:none;">
+              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                <img src="github-mark.png" width="40" height="20" alt="View RonanS96 on Github" style="vertical-align:middle;" border="0">
+                    &nbsp;</span></a></li>
+        <li>
+      </ul>
+    </div>
     <br>
     <!-- Template for navigation bar to be used on every page -->
     <div class="footer">
@@ -92,6 +76,8 @@
         <li><a href="../education.html">Education</a></li>
         <li> | </li>
         <li><a href="../resources.html">Resources</a></li>
+        <li> | </li>
+        <li><a href="all.html">Projects</a></li>
       </ul>
     </div>
     <div class="info">
