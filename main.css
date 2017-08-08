@@ -46,6 +46,10 @@ ul{
     padding-right: 2%;
 }
 
+.bullet{
+  display: list-item;
+}
+
 li{
   display: inline;
 }
