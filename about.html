@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -16,15 +17,14 @@
     <title>Ronan Smith Dev Blog</title>
   </head>
   <body>
-    <div class="navbar">
+    <div id="nav" class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li> | </li>
-        <li><a href="education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="resources.html">Resources</a></li>
-        <li> | </li>
-        <li><a href="projects/all.html">Projects</a></li>
+        <li class="dropdown" id="dropdown"><a><img src="img/drop-down.png" height="20" width="35"></img></a></li>
+        <li><a href="index.html" id="nav-dropdown">Ronan J. Smith</a></li>
+        <li class="fright" id="nav-dropdown"><a href="about.html">About Me</a></li>
+        <li class="fright" id="nav-dropdown"><a href="education.html">Education</a></li>
+        <li class="fright" id="nav-dropdown"><a href="resources.html">Resources</a></li>
+        <li class="fright" id="nav-dropdown"><a href="projects/all.html">Projects</a></li>
       </ul>
     </div>
     <!-- Template for navigation bar END -->
@@ -48,7 +48,7 @@
          work in more detail than would be possible on a CV.
          On my current timetable, you will find me in university on Mondays and Wednesday to Friday.  Usually, I will work from home on a Tuesday.
          In my time in the university building outside of classes you are likely to
-         find me in the Linux lab (Earl Mountbatten builing, room 2.45) or the lunch hall! To see some projects I am currently working on please click <a href="projects/all.html">here</a>.
+         find me in the Linux lab (Earl Mountbatten builing, second floor) or the lunch hall! To see some projects I am currently working on please click <a href="projects/all.html">here</a>.
          If you wish to contact me please do so on my academic email address shown below:</p>
       <p>rs6@hw.ac.uk</p>
       <p>
@@ -68,34 +68,26 @@
       </p>
     </div>
     <br>
-    <div class="footer">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li> | </li>
-        <li><a href="education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="resources.html">Resources</a></li>
-        <li> | </li>
-        <li><a href="projects/all.html">Projects</a></li>
-      </ul>
-    </div>
+
     <!-- Links to professional sites like GitHub and LinkedIn -->
     <div class="info">
-      <ul>
-        <li><a class="proflink" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
+      <div class="links">
+        <div class="proflink"><a target="_blank" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
             <span style="font: 80% Arial,sans-serif; color:#0783B6;">
               <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Ronan Smith's LinkedIn profile" style="vertical-align:middle;" border="0">
-                &nbsp;</span></a></li>
-        <li><a class="proflink" href="https://github.com/RonanS96/" style="text-decoration:none;">
+                &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://github.com/RonanS96/" style="text-decoration:none;">
               <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                 <img src="projects/github-mark.png" width="40" height="20" alt="View this project on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-        <li><a class="proflink" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
-            <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-            <img src="img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
-                  &nbsp;</span></a>
-        </li>
-      </ul>
+                    &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
+              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                <img src="img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
+                    &nbsp;</span></a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

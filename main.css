@@ -15,6 +15,7 @@ html{
   align-items: center;
 }
 
+
 .item-title{
   font-weight: bold;
 }
@@ -38,42 +39,13 @@ h1{
   text-align: center;
 }
 
-p{
-
-}
-
-ul{
-    padding-right: 2%;
-}
-
 .bullet{
   display: list-item;
 }
 
-li{
-  display: inline;
-}
-
-.navbar{
-    text-align: right;
-    display: inline;
-    width: 100%;
-}
-
-.footer{
-  text-align: center;
-  display: inline;
-  width: 100%;
-}
-
-.proflinks{
-  align-items: center;
-  display: inline;
-  width: 100%;
-}
-
-.proflink{
-  align-items: center;
-  display: inline;
-  width: 100%;
+@media screen and (max-width: 600px){
+  .nametitle{
+      font-size: 45px;
+      max-width: 100%;
+  }
 }

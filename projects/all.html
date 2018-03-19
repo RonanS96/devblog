@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" href="../main.css" type="text/css"/>
+    <link rel="stylesheet" href="../style.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -19,24 +20,25 @@
   </head>
   <body>
     <!-- Template for navigation bar to be used on every page -->
-    <div class="navbar">
+    <div id="nav" class="navbar">
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li> | </li>
-        <li><a href="../about.html">About Me</a></li>
-        <li> | </li>
-        <li><a href="../education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="../resources.html">Resources</a></li>
+        <li class="dropdown" id="dropdown"><a><img src="../img/drop-down.png" height="20" width="35"></img></a></li>
+        <li><a href="../index.html" id="nav-dropdown">Ronan J. Smith</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../about.html">About Me</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../education.html">Education</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../resources.html">Resources</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../projects/all.html">Projects</a></li>
       </ul>
     </div>
+    <br>
+    <br>
     <!-- Template for navigation bar END -->
     <h1 class="nametitle">University Projects</h1>
     <h3 class="subtitle">Projects I have undertaken as part of a university assessment.</h3>
     <h4 class="subtitle">For information on some of my personal projects, click <a href="coursework.html">here</a>.</h4>
     <br>
     <div class="timeline">
-      <h3 class="subtitle"><b>Current:</b></h3>
+      <h3 class="subtitle"><b>Current Year (4):</b></h3>
       <div class="item">
         <div class="item-title">
           <h3 class="item-title"><a>4th Year Honours Project</a></h3>
@@ -97,6 +99,15 @@
         <div class="info">
           Technologies used: MySQL, PHP, JSON, MongoDB.
         </div>
+        <div class="info">
+
+            <div class="proflink"><a class="proflink" target="_blank" target="_blank" href="https://github.com/RonanS96/SQL2JSON-public/" style="text-decoration:none;">
+                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+                      <div class="proflink">
+
+        </div>
       </div>
       <div class="item">
         <div class="item-title">
@@ -114,52 +125,6 @@
         </div>
         <div class="info">
           Technologies used: IDEF3 Process Models.
-        </div>
-      </div>
-
-        <div class="info">
-          <ul>
-            <li><a class="proflink" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                      &nbsp;</span></a></li>
-                      <li>
-          </ul>
-        </div>
-      </div>
-
-
-      <h3 class="subtitle"><b>Completed:</b></h3>
-
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>A* Search </a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 20th September 2016</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 20th November 2016</div>
-        </div>
-        <div class="info">
-          I worked with a partner to produce a program which could find the shortest
-          path between points on a grid using the A* search algorithm.  The second part of
-          this assignment involved writing PDDL scripts for different scenarios.
-        </div>
-        <div class="info">
-          Technologies used: Python, Heuristics, A* search, PDDL/STRIPS.
-        </div>
-        <div class="info">
-          [<a href="aii2016.pdf">Assignment Sheet</a>]
-        </div>
-        <div class="info">
-          <ul>
-            <li><a class="proflink" href="https://github.com/jmcculloch796/robotplanner" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-            <li>
-          </ul>
         </div>
       </div>
       <div class="item">
@@ -180,13 +145,77 @@
           Technologies used: Java.
         </div>
         <div class="info">
-          <ul>
-            <li><a class="proflink" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
+
+            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
                 <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                   <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-            <li>
-          </ul>
+                    &nbsp;</span></a></div>
+            <div class="proflink">
+
+        </div>
+      </div>
+        <div class="item">
+          <div class="item-title">
+            <h3 class="item-title"><a>Evolutionary Algorithm</a></h3>
+          </div>
+          <div class="item-date">
+            <div class="date-posted">Start Date: 25th September 2017</div>
+          </div>
+          <div class="item-date">
+            <div class="date-posted">End Date: 1st November 2017</div>
+          </div>
+          <div class="info">
+            This coursework, to be carried out for my Biologically Inspired Computation module, involves writing an
+            evolutionary algorithm to solve the travelling salesman problem, using a dataset containing the latitude and
+            longitude of 980 locations in Luxemburg.
+          </div>
+          <div class="info">
+            Technologies used: Java.
+          </div>
+        </div>
+        <div class="info">
+
+            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
+                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                    &nbsp;</span></a></div>
+            <div class="proflink">
+
+        </div>
+      </div>
+
+
+      <h3 class="subtitle"><b>Past Years:</b></h3>
+
+      <div class="item">
+        <div class="item-title">
+          <h3 class="item-title"><a>A* Search </a></h3>
+        </div>
+        <div class="item-date">
+          <div class="date-posted">Start Date: 20th September 2016</div>
+        </div>
+        <div class="item-date">
+          <div class="date-posted">End Date: 20th November 2016</div>
+        </div>
+        <div class="info">
+          I worked with a partner to produce a program which could find the shortest
+          path between points on a grid using the A* search algorithm.  The second part of
+          this assignment involved writing PDDL scripts for different scenarios.
+        </div>
+        <div class="info">
+          Technologies used: Python, Heuristics, A* search, PDDL/STRIPS.
+        </div>
+        <div class="info">
+          [<a target="_blank" href="aii2016.pdf">Assignment Sheet</a>]
+        </div>
+        <div class="info">
+
+            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/jmcculloch796/robotplanner" style="text-decoration:none;">
+                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                    &nbsp;</span></a></div>
+            <div class="proflink">
+
         </div>
       </div>
       <div class="item">
@@ -208,16 +237,16 @@
           Technologies used: C, Makefiles.
         </div>
         <div class="info">
-          [<a href="lp2017.pdf">Assignment Sheet</a>]
+          [<a target="_blank" href="lp2017.pdf">Assignment Sheet</a>]
         </div>
         <div class="info">
-          <ul>
-            <li><a class="proflink" href="https://github.com/RonanS96/RecursiveDescentParser" style="text-decoration:none;">
+
+            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/RecursiveDescentParser" style="text-decoration:none;">
                 <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                   <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-            <li>
-          </ul>
+                    &nbsp;</span></a></div>
+            <div class="proflink">
+
         </div>
       </div>
       <div class="item">
@@ -262,26 +291,7 @@
           Technologies used: MySQL, Java, XML.
         </div>
         <div class="info">
-          [<a href="dbms.pdf">Assignment Sheet</a>]
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Evolutionary Algorithm</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 25th September 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 1st November 2017</div>
-        </div>
-        <div class="info">
-          This coursework, to be carried out for my Biologically Inspired Computation module, involves writing an
-          evolutionary algorithm to solve the travelling salesman problem, using a dataset containing the latitude and
-          longitude of 980 locations in Luxemburg.
-        </div>
-        <div class="info">
-          Technologies used: Java.
+          [<a target="_blank" href="dbms.pdf">Assignment Sheet</a>]
         </div>
       </div>
       <div class="item">
@@ -305,7 +315,7 @@
           Technologies used: Java, Java Libraries.
         </div>
         <div class="info">
-          [<a href="dsa2015.pdf">Assignment Sheet</a>]
+          [<a target="_blank" href="dsa2015.pdf">Assignment Sheet</a>]
         </div>
       </div>
       <div class="item">
@@ -329,21 +339,21 @@
           Technologies used: SML.
         </div>
         <div class="info">
-          [<a href="fo116.pdf">Assignment Sheet</a>]
+          [<a target="_blank" href="fo116.pdf">Assignment Sheet</a>]
         </div>
         <div class="info">
-          <ul>
-            <li><a class="proflink" href="https://github.com/RonanS96/LambdaTranslator.git" style="text-decoration:none;">
+
+            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/LambdaTranslator.git" style="text-decoration:none;">
                 <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                   <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-            <li>
-          </ul>
+                    &nbsp;</span></a></div>
+            <div class="proflink">
+
         </div>
       </div>
       <div class="item">
         <div class="item-title">
-          <h3 class="item-title"><a href="gras.html">Gambit Resource Allocation System (G.R.A.S)</a></h3>
+          <h3 class="item-title"><a target="_blank" href="gras.html">Gambit Resource Allocation System (G.R.A.S)</a></h3>
         </div>
         <div class="item-date">
           <div class="date-posted">Start Date: 20th September 2016</div>
@@ -420,7 +430,7 @@
           Technologies used: UML Diagrams.
         </div>
         <div class="info">
-          [<a href="sd2015.pdf">Submitted Report</a>]
+          [<a target="_blank" href="sd2015.pdf">Submitted Report</a>]
         </div>
       </div>
       <div class="item">
@@ -441,12 +451,12 @@
           Technologies used: SML New Jersey, JSON.
         </div>
         <div class="info">
-          [<a href="fo22017.pdf">Assignment Sheet</a>]
+          [<a target="_blank" href="fo22017.pdf">Assignment Sheet</a>]
         </div>
       </div>
       <div class="item">
         <div class="item-title">
-          <h3 class="item-title"><a href="http://www2.macs.hw.ac.uk/~jm7/WebsiteForID/homepage.html">Rex - The Robot Guide Dog</a></h3>
+          <h3 class="item-title"><a target="_blank" href="http://www2.macs.hw.ac.uk/~jm7/WebsiteForID/homepage.html">Rex - The Robot Guide Dog</a></h3>
         </div>
         <div class="item-date">
           <div class="date-posted">Start Date: 1st October 2015</div>
@@ -469,34 +479,25 @@
       </div>
     </div>
     <br>
-    <!-- Template for navigation bar to be used on every page -->
-    <div class="footer">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li> | </li>
-        <li><a href="../about.html">About Me</a></li>
-        <li> | </li>
-        <li><a href="../education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="../resources.html">Resources</a></li>
-      </ul>
-    </div>
     <div class="info">
-      <ul>
-        <li><a class="proflink" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
+      <div class="links">
+        <div class="proflink"><a target="_blank" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
             <span style="font: 80% Arial,sans-serif; color:#0783B6;">
               <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Ronan Smith's LinkedIn profile" style="vertical-align:middle;" border="0">
-                &nbsp;</span></a></li>
-        <li><a class="proflink" href="https://github.com/RonanS96/" style="text-decoration:none;">
+                &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://github.com/RonanS96/" style="text-decoration:none;">
               <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-        <li><a class="proflink" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
-            <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-            <img src="../img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
-                      &nbsp;</span></a>
-        </li>
-      </ul>
+                <img src="../projects/github-mark.png" width="40" height="20" alt="View this project on Github" style="vertical-align:middle;" border="0">
+                    &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
+              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                <img src="../img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
+                    &nbsp;</span></a>
+        </div>
+      </div>
     </div>
+    <br>
   </body>
 </html>

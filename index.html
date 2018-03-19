@@ -7,29 +7,33 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="main.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <!-- Optional theme -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- End of Bootstrap links -->
     <title>Ronan Smith Dev Blog</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
     <!-- Template for navigation bar to be used on every page -->
-    <div class="navbar" align="right">
+    <div id="nav" class="navbar">
       <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li> | </li>
-        <li><a href="education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="resources.html">Resources</a></li>
-        <li> | </li>
-        <li><a href="projects/all.html">Projects</a></li>
+        <li class="dropdown" id="dropdown"><a><img src="img/drop-down.png" height="20" width="35"></img></a></li>
+        <li><a href="index.html" id="nav-dropdown">Ronan J. Smith</a></li>
+        <li class="fright" id="nav-dropdown"><a href="about.html">About Me</a></li>
+        <li class="fright" id="nav-dropdown"><a href="education.html">Education</a></li>
+        <li class="fright" id="nav-dropdown"><a href="resources.html">Resources</a></li>
+        <li class="fright" id="nav-dropdown"><a href="projects/all.html">Projects</a></li>
       </ul>
     </div>
+    <br>
+    <br>
     <!-- Template for navigation bar END -->
     <h1 class="nametitle">Ronan J. Smith</h1>
     <h3 class="subtitle">Budding Computer Scientist, Student at Heriot Watt University.</h3>
@@ -38,6 +42,19 @@
 
     <!-- The timeline is where each of the blog items will be displayed -->
     <div class="timeline">
+      <div class="item">
+        <div class="item-title">
+          <h3 class="item-title"><a target="_blank" href="http://www2.macs.hw.ac.uk/~rs6/LaTCh">LaTCh</a></h3>
+        </div>
+        <div class="item-date">
+          <div class="date-posted">Posted on 19th March 2018</div>
+        </div>
+        <div class="info">
+          For my fourth year Honours project <i>An Online tool to Choose a Programming Language</i> I have created a website called
+          'LaTCh - Language and Technology Chooser'.  Take a look here, and you can also try my usability study, which is running from today
+          until the 28th March <a target="_blank" href="https://s.surveyplanet.com/BJhFLx7uf">here</a>.
+        </div>
+      </div>
       <div class="item">
         <div class="item-title">
           <h3 class="item-title"><a href="grades/year4.html">Exam Results</a></h3>
@@ -183,37 +200,30 @@
     </div>
 
     <br>
-    <!-- Template for navigation bar to be used on every page -->
-    <div class="footer">
-      <ul>
-        <li><a href="about.html">About Me</a></li>
-        <li> | </li>
-        <li><a href="education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="resources.html">Resources</a></li>
-        <li> | </li>
-        <li><a href="projects/all.html">Projects</a></li>
-      </ul>
-    </div>
     <!-- Template for navigation bar END -->
     <!-- Links to professional sites like GitHub and LinkedIn -->
     <div class="info">
-      <ul>
-        <li><a class="proflink" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
+      <div class="links">
+        <div class="proflink"><a target="_blank" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
             <span style="font: 80% Arial,sans-serif; color:#0783B6;">
               <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Ronan Smith's LinkedIn profile" style="vertical-align:middle;" border="0">
-                &nbsp;</span></a></li>
-        <li><a class="proflink" href="https://github.com/RonanS96/" style="text-decoration:none;">
+                &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://github.com/RonanS96/" style="text-decoration:none;">
               <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                 <img src="projects/github-mark.png" width="40" height="20" alt="View this project on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-        <li>
-        <li><a class="proflink" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
+                    &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
               <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                 <img src="img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-        <li>
-      </ul>
+                    &nbsp;</span></a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="info">
+      <!-- <a href="https://d1o0p9akh0xc4c.cloudfront.net/">Login</a> -->
     </div>
     <br>
   </body>

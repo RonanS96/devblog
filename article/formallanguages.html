@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="../img/logo.png">
     <link rel="stylesheet" type="text/css" href="../main.css" />
+    <link rel="stylesheet" href="../style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -17,19 +18,18 @@
     <title>Ronan Smith Dev Blog</title>
   </head>
   <body>
-    <div class="navbar">
+    <div id="nav" class="navbar">
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li> | </li>
-        <li><a href="../about.html">About Me</a></li>
-        <li> | </li>
-        <li><a href="../education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="../resources.html">Resources</a></li>
-        <li> | </li>
-        <li><a href="../projects/all.html">Projects</a></li>
+        <li class="dropdown" id="dropdown"><a><img src="../img/drop-down.png" height="20" width="35"></img></a></li>
+        <li><a href="../index.html" id="nav-dropdown">Ronan J. Smith</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../about.html">About Me</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../education.html">Education</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../resources.html">Resources</a></li>
+        <li class="fright" id="nav-dropdown"><a href="../projects/all.html">Projects</a></li>
       </ul>
     </div>
+    <br>
+    <br>
     <h1 class="nametitle">What is a Formal Language?</h1>
     <h3 class="subtitle">(<a href="FormalLanguages.pdf">PDF version</a>)</h3>
     <br>
@@ -123,36 +123,25 @@
       <p align="left">1.	Chomsky Classification of Grammars [online]. Available from <a href="https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm">https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm</a>. [Accessed 01/08/2017].</p>
     </div>
     <br>
-    <div class="footer">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li> | </li>
-        <li><a href="../about.html">About Me</a></li>
-        <li> | </li>
-        <li><a href="../education.html">Education</a></li>
-        <li> | </li>
-        <li><a href="../resources.html">Resources</a></li>
-        <li> | </li>
-        <li><a href="../projects/all.html">Projects</a></li>
-      </ul>
-    </div>
-    <div align="left">
-      <ul>
-        <li><a class="proflink" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
+    <div class="info">
+      <div class="links">
+        <div class="proflink"><a target="_blank" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
             <span style="font: 80% Arial,sans-serif; color:#0783B6;">
               <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Ronan Smith's LinkedIn profile" style="vertical-align:middle;" border="0">
-                &nbsp;</span></a></li>
-        <li><a class="proflink" href="https://github.com/RonanS96/" style="text-decoration:none;">
+                &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://github.com/RonanS96/" style="text-decoration:none;">
               <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                 <img src="../projects/github-mark.png" width="40" height="20" alt="View this project on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-        <li>
-        <li><a class="proflink" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
+                    &nbsp;</span></a>
+        </div>
+        <div class="proflink"><a target="_blank" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
               <span style="font: 80% Arial,sans-serif; color:#0783B6;">
                 <img src="../img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></li>
-        <li>
-      </ul>
+                    &nbsp;</span></a>
+        </div>
+      </div>
     </div>
+    <br>
   </body>
 </html>
