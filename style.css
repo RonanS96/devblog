@@ -7,10 +7,14 @@ ul {
  }
 
 .navbar{
-   position: sticky;
+   position: fixed;
    top: 0;
    width: 100%;
    padding-bottom: 0px;
+   padding-top: 0px;
+   border-top: 10px;
+   border-left: 10px;
+   border-right: 10px;
 }
 
  li.fright{
@@ -60,8 +64,6 @@ ul {
    #dropdown{
      display: block;
    }
-
-
     h1.subtitle{
        max-width: 100%;
      }
@@ -104,5 +106,5 @@ ul {
 
      ul li {float: none; display: block;}
      li.fright {float: none;}
-     .navbar{position: fixed; top: 0;}
+     
   }
