@@ -7,6 +7,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -16,11 +17,12 @@
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- End of Bootstrap links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ronan Smith Dev Blog</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -37,180 +39,228 @@
     <br>
     <!-- Template for navigation bar END -->
     <h1 class="nametitle">Ronan J. Smith</h1>
-    <h3 class="subtitle">Budding Computer Scientist, Student at Heriot Watt University.</h3>
+    <h3 class="subtitle">Budding Computer Scientist and STEM Ambassador.</h3>
     <h4 class="subtitle">NOTE: Some parts of this site are still under construction. Please refresh the page to see the latest updates.</h4>
     <br>
 
-    <!-- The timeline is where each of the blog items will be displayed -->
-    <div class="timeline">
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a target="_blank" href="http://www2.macs.hw.ac.uk/~rs6/LaTCh/Dissertation.pdf">Dissertation Completed</a></h3>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>DISSERTATION COMPLETED</b></h3>
+          <h5>An Online tool to Choose a Programming Language, <span class="w3-opacity">23rd April, 2018</span></h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 23rd April 2018</div>
-        </div>
-        <div class="info">
-          Today I submitted the final version of my dissertation, written for my fourth year Honours Project <i>An Online tool to Choose a Programming Language.</i>
-          Only two exams left now before graduation in June!
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a target="_blank" href="http://www2.macs.hw.ac.uk/~rs6/LaTCh">LaTCh</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 19th March 2018</div>
-        </div>
-        <div class="info">
-          For my fourth year Honours project <i>An Online tool to Choose a Programming Language</i> I have created a website called
-          'LaTCh - Language and Technology Chooser'.  Take a look here, and you can also try my usability study, which is running from today
-          until the 28th March <a target="_blank" href="https://s.surveyplanet.com/BJhFLx7uf">here</a>.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="grades/year4.html">Exam Results</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 25th January 2018</div>
-        </div>
-        <div class="info">
-          I have now recieved my grades for semester 1.  My grades were a B and a C in my 2 exams, as well as a high B for
-          the first deliverable of my honours project.
+
+        <div class="w3-container">
+          <p>
+            Today I submitted the final version of my dissertation, written for my fourth year Honours Project <i>An Online tool to Choose a Programming Language.</i>
+            The focus of the dissertion was creating a website that could help programmers find a language that suits their needs.  Research carried out for the project involved
+            finding out what the most popular programming languages were and what makes different languages useful in different contexts.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="http://www2.macs.hw.ac.uk/~rs6/LaTCh/Dissertation.pdf"><button class="w3-button w3-padding-large w3-white w3-border"><b>Dissertation Doc. »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="projects/cinc.html">Computing in the Classroom</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>LaTCh</b></h3>
+          <h5>Language and Technology Chooser, <span class="w3-opacity">19th March, 2018</span></h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 16th January 2018</div>
-        </div>
-        <div class="info">
-          On the 24th, 25th and 26th January, I will be carrying out my personal project for Computing in the Classroom.
-          Click here to see what it's all about.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="grades/year4.html">Back to Uni</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 8th January 2018</div>
-        </div>
-        <div class="info">
-          I have now returned to university for my final semester of my final year.  This semester I am studying two modules,
-          Big Data Management and E-Commerce Technology, and I will also be working on my Honours Project.
+
+        <div class="w3-container">
+          <p>
+            For my fourth year Honours project <i>An Online tool to Choose a Programming Language</i> I have created a website called
+            'LaTCh - Language and Technology Chooser'.  This website has went through 3 prototype stages and is now complete for the project.
+            However, it has been developed with many future extensions in mind.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="http://www2.macs.hw.ac.uk/~rs6/LaTCh"><button class="w3-button w3-padding-large w3-white w3-border"><b>LaTCh »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>STEM Routes into Employment Event</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>EXAM RESULTS</b></h3>
+          <h5>Year 4, Semester 1, <span class="w3-opacity">19th March, 2018</span></h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 14th November 2017</div>
-        </div>
-        <div class="info">
-          Yesterday morning I attended my first event with STEM East and the STEM Ambassadors. It was
-          a networking event at Currie Community High School that allowed 3rd year pupils to speak to
-          people involved in STEM subjects at work or university and ask us questions to find out more
-          information including the skills they needed for particular areas of work or study.  It was a
-          successful morning for me and I enjoyed meeting with the young students, finding out what they
-          are interested in and answering their questions.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="resources.html">Resources</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 17th October 2017</div>
-        </div>
-        <div class="info">
-          I have just updated my resources page.  Please take a look to see some of the software tools
-          I use for my work as well as some useful links to tutorials or computer science related websites.
+
+        <div class="w3-container">
+          <p>
+            For semester 1, I have received a B and a C in my 2 exams, and a high B for the first deliverable of my honours project. Click the link below to see my fourth year
+            grades so far and to see links to grades from previous years.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="grades/year4.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>Classes & Grades »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Leidos Best Student Group Project Prize</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>COMPUTING IN THE CLASSROOM</b></h3>
+          <h5>Personal Project, <span class="w3-opacity">16th January, 2018</span></h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 12th October 2017</div>
-        </div>
-        <div class="info">
-          Today I was awarded with a certificate to congratulate me and my group on coming third
-          for the Leidos Best Student Group Project Prize.  This was awarded to us for showing a
-          demo of our <a href="projects/gras.html">G.R.A.S</a> system at an expo in May.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Certificate of Merit</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 12th September 2017</div>
-        </div>
-        <div class="info">
-          Today I was awarded with a certificate of merit from the Heriot-Watt Computer Science
-          department.  This award is given to students who obtain 70% or over in their assessments.
-          My third year grades can be seen <a href="grades/university.html">here</a>.
+
+        <div class="w3-container">
+          <p>
+            On the 24th, 25th and 26th January, I will be carrying out my personal project for Computing in the Classroom.  This project will involve me taking the lead
+            in the class by taking three lessons based on mobile app development.  Please click the link below to find out more about this project.
+            Click here to see what it's all about.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="projects/cinc.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>Find out More »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="grades/year4.html">4th Year Begins</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>STEM ROUTES INTO EMPLOYMENT EVENT</b></h3>
+          <h5>Curry Community High School, <span class="w3-opacity">14th November, 2017</span></h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 11th September 2017</div>
-        </div>
-        <div class="info">
-          Today is my first day of year 4 at Heriot Watt University.  This semester I will be studying 4 modules;
-          Research Methods and Requirements Engineering, Biologically Inspired Agents, Data Mining and Machine Learning
-          and Computing in the Classroom.  And I will also be taking part in an honours project which I am yet to select.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>STEM Ambassador</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 16th August 2017</div>
-        </div>
-        <div class="info">
-          I am now officially registered as a STEM Ambassador, which means I will be invited to
-          take part in voluntary activities around the East of Scotland which promote the education of
-          and working in STEM (Science, Technology, Engineering and Maths) subjects.  My first
-          activity will be in my fourth year of university when I will be assisting in a high school
-          computing classroom.
+
+        <div class="w3-container">
+          <p>
+            Yesterday morning I attended my first event with STEM East and the STEM Ambassadors. It was
+            a networking event at Currie Community High School that allowed 3rd year pupils to speak to
+            people involved in STEM subjects at work or university and ask us questions to find out more
+            information including the skills they needed for particular areas of work or study.  It was a
+            successful morning for me and I enjoyed meeting with the young students, finding out what they
+            are interested in and answering their questions.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="https://www.stem.org.uk/stem-ambassadors"><button class="w3-button w3-padding-large w3-white w3-border"><b>Find out More about STEM »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="article/formallanguages.html">Formal Languages</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>LEIDOS BEST STUDENT GROUP PROJECT PRIZE</b></h3>
+          <h5>Curry Community High School, <span class="w3-opacity">14th November, 2017</span></h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 8th August 2017</div>
-        </div>
-        <div class="info">
-          What is a formal language and how can it be defined?
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="grades/university.html">Third Year Passed</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Posted on 7th June 2017</div>
-        </div>
-        <div class="info">
-          I have now passed my third year of university, and will return for fourth year
-          in September.  I finished the year with 4 A grades, 2 Bs and 2 Cs, and an average
-          mark of 70.13% in third year.
+
+        <div class="w3-container">
+          <p>
+            Today I was awarded with a certificate to congratulate me and my group on coming third
+            for the Leidos Best Student Group Project Prize.  This was awarded to us for showing a
+            demo of our G.R.A.S staff and project management system at an expo in May.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="projects/gras.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>G.R.A.S »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>CERTICIFATE OF MERIT</b></h3>
+          <h5>MACS Heriot-Watt, <span class="w3-opacity">12th September, 2017</span></h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            Today I was awarded with a certificate of merit from the Heriot-Watt Computer Science
+            department.  This award is given to students who obtain 70% or over in their assessments.
+            See my third year grades using the link below.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="grades/university.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>Classes & Grades »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>STEM AMBASSADOR</b></h3>
+          <h5>STEM East, <span class="w3-opacity">16th August, 2017</span></h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            I am now officially registered as a STEM Ambassador, which means I will be invited to
+            take part in voluntary activities around the East of Scotland which promote the education of
+            and working in STEM (Science, Technology, Engineering and Maths) subjects.  Through this scheme I have
+            also received a disclosure for working with children. My first
+            activity will be in my fourth year of university when I will be assisting in a high school
+            computing classroom.  Find out more about STEM Ambassadors below.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="https://www.stem.org.uk/stem-ambassadors"><button class="w3-button w3-padding-large w3-white w3-border"><b>Find out More about STEM »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>FORMAL LANGUAGES</b></h3>
+          <h5>What is a Formal Language and how can it be defined? <span class="w3-opacity">16th August, 2017</span></h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This short artricle discussed formal languages, an underlying structure in computer programming languages.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="article/formallanguages.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>Formal Languages »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+    <!-- END ALL BLOG ENTRIES -->
     </div>
+    <hr>
+    <!-- END Introduction Menu -->
+    </div>
+    <!-- END GRID -->
+    </div>
+    <br>
+    <!-- END w3-content -->
 
     <br>
     <!-- Template for navigation bar END -->
@@ -236,7 +286,7 @@
     </div>
     <br>
     <div class="info">
-      <a href="https://d1o0p9akh0xc4c.cloudfront.net/">Access securely using Amazon CloudFront</a>
+      <a title="Access securely using Amazon CloudFront" href="https://d1o0p9akh0xc4c.cloudfront.net/"><i class="fa fa-lock" style="font-size:24px; color:black;"></i></a>
     </div>
     <br>
   </body>

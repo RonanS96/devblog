@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -18,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -36,45 +37,68 @@
     <h1 class="nametitle">My Education</h1>
     <h3 class="subtitle">This page describes my education history including high school and university.</h3>
     <br>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
 
-    <!-- The timeline is where each of the blog items will be displayed -->
-    <div class="timeline">
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a target="_blank" href="http://www.wchs.org.uk/">West Calder High School (Aug 2008 - June 2014)</a></h3>
+    <!-- Grid -->
+    <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>West Calder High School (Aug 2008 - June 2014)</b></h3>
+          <h5>Limefield, Polbeth, West Calder, EH55 8QN</h5>
         </div>
-        <div class="item-address">
-          <div class="date-posted">Limefield, Polbeth, West Calder, EH55 8QN</div>
-        </div>
-        <div class="info">
-          I spent 6 years at WCHS achieving 6 standard grades, 2 Int 2s, an Int 1 and 8 Highers - 5 of which were with an A grade.
-          During my final year I was a prefect and a 'buddy' for the new first years.  I was also involved in the school football
-          team during 5th and 6th year.
-        </div>
-        <div class="grades">
-          <div>[<a href="grades/highschool.html">My Grades</a>]</div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a target="_blank" href="https://www.hw.ac.uk/">Heriot-Watt University (Sep 2014 - June 2018)</a></h3>
-        </div>
-        <div class "item-title">
-          <h4 class="item-title">BSc Computer Science (HONS)</h4>
-        </div>
-        <div class="item-address">
-          <div class="date-posted">Edinburgh Campus, Edinburgh, EH14 4AS</div>
-        </div>
-        <div class="info">
-          <div>I am currently in my fourth year and on course to graduate in June 2018.</div>
-        </div>
-        <div class="grades">
-          <div>[<a href="grades/university.html">Classes & Grades</a>]</div>
+
+        <div class="w3-container">
+          <p>
+            I spent 6 years at WCHS achieving 6 standard grades, 2 Int 2s, an Int 1 and 8 Highers - 5 of which were with an A grade.
+            During my final year I was a prefect and a 'buddy' for the new first years.  I was also involved in the school football
+            team during 5th and 6th year. See the West Calder High School website <a target="_blank" href="http://www.wchs.org.uk/">here</a>.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="grades/highschool.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>My Grades »</b></button></a></p>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Heriot-Watt University (Sep 2014 - June 2018)</b></h3>
+          <h5><b>BSc Computer Science (HONS)</b></h5>
+          <h5>Edinburgh Campus, Edinburgh, EH14 4AS</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            I have just completed my fourth year and will graduate in June 2018.  The Heriot-Watt website is available <a target="_blank" href="https://www.hw.ac.uk/">here</a>.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a href="grades/university.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>Classes & Grades »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+
+    <!-- END ALL BLOG ENTRIES -->
     </div>
-
-
+    <hr>
+    <!-- END Introduction Menu -->
+    </div>
+    <!-- END GRID -->
+    </div>
+    <br>
+    <!-- END w3-content -->
+  
     <br>
 
     <!-- Links to professional sites like GitHub and LinkedIn -->

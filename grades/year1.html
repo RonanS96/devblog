@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -16,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -35,167 +36,199 @@
     <h3 class="subtitle"><a href="year4.html">4</a> | <a href="university.html">3</a> | <a href="year2.html">2</a> | Year 1</h3>
     <br>
 
-    <!-- The timeline is where each of the blog items will be displayed -->
-    <div class="timeline">
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Logic and Proof</a></h3>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Logic and Proof</b></h3>
+          <h5>Year 1, Semester 1. Grade: A (71%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:71%">71%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (71%)</div>
-        </div>
-        <div class="info">
-          This module introduced me to the mathematical concept of logic. This included predicate
-          logic, including the truth tables of AND, OR, IMPLICATION, BI-IMPLICATION and NOT. And
-          First-Order Logic.  We also covered areas such as parse trees, Boolean algebra, sets and
-          Russell's Paradox.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Interaction Design</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (71%)</div>
-        </div>
-        <div class="info">
-          This module covered the creation of Android apps and was entirely coursework based.
-          I built a currency converter and a game called Hit the Target using MIT App Inventor
-          and Java/XML respectively.  The course focused on creating apps that were useful and
-          attractive to use and look at.
+
+        <div class="w3-container">
+          <p>
+            This module introduced me to the mathematical concept of logic. This included predicate logic, including the truth tables of AND, OR, IMPLICATION, BI-IMPLICATION and NOT. And First-Order Logic. We also covered areas such as parse trees, Boolean algebra, sets and Russell's Paradox.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Praxis</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Interaction Design</b></h3>
+          <h5>Year 1, Semester 1. Grade: A (71%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:71%">71%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (73%)</div>
-        </div>
-        <div class="info">
-          From the latin word meaning to practice, this course was all about introducing us to
-          university working life.  We covered topics on presentation skills, working in groups,
-          careers and report writing - including Harvard referencing.  The entire course grade was
-          made up from 3 reports written on technology subjects which we had some choice over.
-          Mines are shown below:
-        </div>
-        <div class="info">
-          [<a href="ANN.pdf">Artificial Neural Networks</a>]
-          [<a href="HPA.pdf">Hewlett Packard Autonomy</a>]
-          [<a href="SG.pdf">Serious Games</a>]
+
+        <div class="w3-container">
+          <p>
+            This module covered the creation of Android apps and was entirely coursework based. I built a currency converter and a game called Hit the Target using MIT App Inventor and Java/XML respectively. The course focused on creating apps that were useful and attractive to use and look at.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Software Development 1</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Praxis</b></h3>
+          <h5>Year 1, Semester 1. Grade: A (73%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:73%">73%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: B (67%)</div>
-        </div>
-        <div class="info">
-          As the first of 3 Software Development modules this course introduced us to
-          the concept of object-oriented programming and in particular the programming
-          language Java.  We covered objects/classes and types, variables, loops, basic
-          data structures and some sorting algorithms.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Introduction to Computer Systems</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: D (48%)</div>
-        </div>
-        <div class="info">
-          Intro to Computer Systems covered Computing at a much lower level than I had
-          worked with before.  The course started off covering the history of computing
-          but later topics discussed information representation and floating point binary
-          values, processor design, operating systems, memory and virtual memory, and
-          MIPS Assembly language.
+
+        <div class="w3-container">
+          <p>
+            From the latin word meaning to practice, this course was all about introducing us to university working life. We covered topics on presentation skills, working in groups, careers and report writing - including Harvard referencing. The entire course grade was made up from 3 reports written on technology subjects which we had some choice over. Mines are shown below:
+            <div class="info">
+              [<a target="_blank" href="ANN.pdf">Artificial Neural Networks</a>]
+              [<a target="_blank" href="HPA.pdf">Hewlett Packard Autonomy</a>]
+              [<a target="_blank" href="SG.pdf">Serious Games</a>]
+            </div>
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Software Development 2</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Software Development 1</b></h3>
+          <h5>Year 1, Semester 1. Grade: B (67%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:67%">67%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: C (59%)</div>
-        </div>
-        <div class="info">
-          Software Development 2 covered some more complex areas of programming in Java,
-          such as abstract classes, polymorphism, refacturing and inheritance.  Part 2
-          of this module discussed graphical user interfaces (GUIs) in Java (using Java AWT
-          and Swing libraries).
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Software Development 3</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: C (50%)</div>
-        </div>
-        <div class="info">
-          This module taught us more complex data structures such as Stacks, Queues, Linked
-          Lists and Trees, and algorithms for searching and sorting the data being stored in them.
-          We also covered Big-Oh notation on this course which can be used to measure the efficiency
-          of algorithms and compare them against each other.
+
+        <div class="w3-container">
+          <p>
+            As the first of 3 Software Development modules this course introduced us to the concept of object-oriented programming and in particular the programming language Java. We covered objects/classes and types, variables, loops, basic data structures and some sorting algorithms.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Web Design and Databases</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Introduction to Computer Systems</b></h3>
+          <h5>Year 1, Semester 2. Grade: D (48%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-red" align="center" style="height:24px;width:48%">48%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (75%)</div>
-        </div>
-        <div class="info">
-          In this module we were introduced to creating websites using HTML and CSS. We were
-          taught some theory about how people use websites and the way in which websites are
-          changing (e.g responsive web design more important now).  We later started working on
-          databases using MySQL and learned to create forms in websites which could communicate
-          with the database through PHP.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Summary</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 1 Average: 64.25%</div>
-        </div>
-        <div class="info">
-          Comments: First semester of first year was a very successful start to university for me
-          and one which I enjoyed.  The quick increase in workload in semester 2, with 3 courses
-          that were highly practical, did have a negative impact on my grades but it helped me to
-          develop my organisational skills.
+
+        <div class="w3-container">
+          <p>
+            Intro to Computer Systems covered Computing at a much lower level than I had worked with before. The course started off covering the history of computing but later topics discussed information representation and floating point binary values, processor design, operating systems, memory and virtual memory, and MIPS Assembly language.
+          </p>
         </div>
       </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Software Development 2</b></h3>
+          <h5>Year 1, Semester 2. Grade: C (59%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" align="center" style="height:24px;width:59%">59%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            Software Development 2 covered some more complex areas of programming in Java, such as abstract classes, polymorphism, refacturing and inheritance. Part 2 of this module discussed graphical user interfaces (GUIs) in Java (using Java AWT and Swing libraries).
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Software Development 3</b></h3>
+          <h5>Year 1, Semester 2. Grade: C (50%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" align="center" style="height:24px;width:50%">50%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This module taught us more complex data structures such as Stacks, Queues, Linked Lists and Trees, and algorithms for searching and sorting the data being stored in them. We also covered Big-Oh notation on this course which can be used to measure the efficiency of algorithms and compare them against each other.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Web Design and Databases</b></h3>
+          <h5>Year 1, Semester 2. Grade: A (75%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:75%">75%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            In this module we were introduced to creating websites using HTML and CSS. We were taught some theory about how people use websites and the way in which websites are changing (e.g responsive web design more important now). We later started working on databases using MySQL and learned to create forms in websites which could communicate with the database through PHP.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Summary</b></h3>
+          <h5>Year 1 Average: </h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:64.25%">64.25%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            Comments: First semester of first year was a very successful start to university for me and one which I enjoyed. The quick increase in workload in semester 2, with 3 courses that were highly practical, did have a negative impact on my grades but it helped me to develop my organisational skills.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+    <!-- END ALL BLOG ENTRIES -->
     </div>
+    <hr>
+    <!-- END Introduction Menu -->
+    </div>
+    <!-- END GRID -->
+    </div>
+    <br>
+    <!-- END w3-content -->
 
     <br>
 

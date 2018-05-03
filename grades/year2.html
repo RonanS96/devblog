@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -16,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -35,169 +36,236 @@
       <h3 class="subtitle"><a href="year4.html">4</a> | <a href="university.html">3</a> | Year 2 | <a href="year1.html">1</a></h3>
     <br>
 
-    <!-- The timeline is where each of the blog items will be displayed -->
-    <div class="timeline">
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Data Structures and Algorithms</a></h3>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Data Structures and Algorithms</b></h3>
+          <h5>Year 2, Semester 1. Grade: B (69%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:69%">69%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: B (69%)</div>
-        </div>
-        <div class="info">
-          In this module we explored complex data structures and algorithms that are used in
-          core areas of computer science. We learned the theory behind heaps, stacks, queues,
-          priority queues, trees and graphs before implementing them in labs.  The coursework
-          involved creating a system (in Java) which stored airports and the flight time between
-          them in a weighted graph. The user could then input where they wanted to fly to and
-          where they were flying from, which then prompted the system to find the shortest flying
-          time, possibly in multiple flights, between the two airports. The program used Dijkstra's
-          algorithm to do this.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Interaction Design</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (75%)</div>
-        </div>
-        <div class="info">
-          In this class we were taught about HCI - Human Computer Interaction - and learned
-          how to design software is easy to use and understand.  We learned about ways users
-          use software and how to design it in ways that satisfy the user (e.g 'Don't make me think!').
-          We carried out a group project where we had to design our own product and test it
-          through a usability study at an expo.
+
+        <div class="w3-container">
+          <p>
+            In this module we explored complex data structures and algorithms that are used in
+            core areas of computer science. We learned the theory behind heaps, stacks, queues,
+            priority queues, trees and graphs before implementing them in labs.  The coursework
+            involved creating a system (in Java) which stored airports and the flight time between
+            them in a weighted graph. The user could then input where they wanted to fly to and
+            where they were flying from, which then prompted the system to find the shortest flying
+            time, possibly in multiple flights, between the two airports. The program used Dijkstra's
+            algorithm to do this.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Programming Languages</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Interaction Design</b></h3>
+          <h5>Year 2, Semester 1. Grade: A (75%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:75%">75%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: B (63%)</div>
-        </div>
-        <div class="info">
-          In Programming Languages, we worked with three different languages (and paradigms),
-          SML New-Jersey (functional), Prolog (logical) and Python (imperative).  The idea was
-          to explore the differences between them in terms of memory management, variables, and
-          how they work in general.  We worked on practical labs throughout the semester to test
-          and develop our knowledge.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Web Programming</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 1</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: D (47%)</div>
-        </div>
-        <div class="info">
-          Web programming discussed the different languages available for creating web
-          sites and web applications.  We were taught some theory about HTML5, XHTML, CSS 3, JavaScript,
-          JQuery and Ajax, CakePHP and JSON. We used PHPMyAdmin to create a database to store tweets from news pages
-          on Twitter and had a website which displayed the information in a clear and attractive
-          format.
+
+        <div class="w3-container">
+          <p>
+            In this class we were taught about HCI - Human Computer Interaction - and learned
+            how to design software is easy to use and understand.  We learned about ways users
+            use software and how to design it in ways that satisfy the user (e.g 'Don't make me think!').
+            We carried out a group project where we had to design our own product and test it
+            through a usability study at an expo.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Discrete Maths</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Programming Languages</b></h3>
+          <h5>Year 2, Semester 1. Grade: B (63%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:63%">63%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: C (50%)</div>
-        </div>
-        <div class="info">
-          This class was all about the 'maths behind computer science' and covered areas
-          such as set theory, graph theory, probability theory, mathematical induction and
-          reccurence relations.  We carried out two class tests during the semester which
-          contributed 30% to my final mark, and both of which I scored A grades in.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Database Management Systems</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (78%)</div>
-        </div>
-        <div class="info">
-          Database Management Systems covered the design and implementation of databases,
-          from the simple theory behind tables and fields to more complicated topics like
-          security, indexing and permissions. We created a database for our coursework in a
-          group of 5 people (using MySQL) for a fictional delivery company. This is explained
-          in more detail on my <a href="../projects/all.html">University Projects</a> page.
-          We also explored other types of database implementations such as object oriented, NoSQL and XML.
+
+        <div class="w3-container">
+          <p>
+            In Programming Languages, we worked with three different languages (and paradigms),
+            SML New-Jersey (functional), Prolog (logical) and Python (imperative).  The idea was
+            to explore the differences between them in terms of memory management, variables, and
+            how they work in general.  We worked on practical labs throughout the semester to test
+            and develop our knowledge.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Hardware-Software Interface</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Web Programming</b></h3>
+          <h5>Year 2, Semester 1. Grade: D (47%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-red" align="center" style="height:24px;width:47%">47%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: E (31%)</div>
-        </div>
-        <div class="info">
-          In this course we were introduced to the C programming language and ARM Assembly language.
-          The coursework for part 1 was to use C to encode secret messages inside the pixels of ppm
-          images, and part 2 involved manipulating a raspbery pi, using a mix of C and ARM, to simulate
-          a game which involved pressing buttons and flashing lights. Some of the theory in this module
-          included the memory hierarchy, interrupt handling and processor architecture.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Software Design</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2, Semester 2</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Grade: A (74%)</div>
-        </div>
-        <div class="info">
-          This course focused on designing software that is highly usable and efficient.
-          Software Design made us aware of the risks that exist when designing software and
-          a number of ways to avoid these risks. We also learned a number of interesting
-          design diagrams such as Use Case, Sequence, Activity and State-Machine diagrams.
+
+        <div class="w3-container">
+          <p>
+            In Programming Languages, we worked with three different languages (and paradigms),
+            SML New-Jersey (functional), Prolog (logical) and Python (imperative).  The idea was
+            to explore the differences between them in terms of memory management, variables, and
+            how they work in general.  We worked on practical labs throughout the semester to test
+            and develop our knowledge.
+          </p>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Summary</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Discrete Maths</b></h3>
+          <h5>Year 2, Semester 2. Grade: C (50%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" align="center" style="height:24px;width:50%">50%</div>
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Year 2 Average: 60.88% Overall Average after year 2: 62.56%</div>
-        </div>
-        <div class="info">
-          Comments: The jump between 1st and 2nd year was one I found challenging but one I did
-          successfully overcome, I feel. With two subjects I found extremely challenging, Web Programming
-          and Hardware-Software Interface taking place in year 2 I feel that this made prioritising and
-          workload a lot harder but I was very happy with my grades in the end.
+
+        <div class="w3-container">
+          <p>
+            This class was all about the 'maths behind computer science' and covered areas
+            such as set theory, graph theory, probability theory, mathematical induction and
+            reccurence relations.  We carried out two class tests during the semester which
+            contributed 30% to my final mark, and both of which I scored A grades in.
+          </p>
         </div>
       </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Database Management Systems</b></h3>
+          <h5>Year 2, Semester 2. Grade: A (78%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:78%">78%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            Database Management Systems covered the design and implementation of databases,
+            from the simple theory behind tables and fields to more complicated topics like
+            security, indexing and permissions. We created a database for our coursework in a
+            group of 5 people (using MySQL) for a fictional delivery company. This is explained
+            in more detail on the <a href="../projects/all.html">University Projects</a> page.
+            We also explored other types of database implementations such as object oriented, NoSQL and XML.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Hardware-Software Interface</b></h3>
+          <h5>Year 2, Semester 2. Grade: E (31%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-red" align="center" style="height:24px;width:31%">31%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            In this course we were introduced to the C programming language and ARM Assembly language.
+            The coursework for part 1 was to use C to encode secret messages inside the pixels of ppm
+            images, and part 2 involved manipulating a raspbery pi, using a mix of C and ARM, to simulate
+            a game which involved pressing buttons and flashing lights. Some of the theory in this module
+            included the memory hierarchy, interrupt handling and processor architecture.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Software Design</b></h3>
+          <h5>Year 2, Semester 2. Grade: A (74%)</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:74%">74%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This course focused on designing software that is highly usable and efficient.
+            Software Design made us aware of the risks that exist when designing software and
+            a number of ways to avoid these risks. We also learned a number of interesting
+            design diagrams such as Use Case, Sequence, Activity and State-Machine diagrams.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Summary</b></h3>
+          <h5>Year 2 Average:</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:62.88%">62.88%</div>
+          </div>
+          <h5>Combined Average Year 1 & 2:</h5>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-green" align="center" style="height:24px;width:62.56%">62.56%</div>
+          </div>
+          <br>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            Comments: The jump between 1st and 2nd year was one I found challenging but one I did
+            successfully overcome, I feel. With two subjects I found extremely challenging, Web Programming
+            and Hardware-Software Interface taking place in year 2 I feel that this made prioritising and
+            workload a lot harder but I was very happy with my grades in the end.
+          </p>
+        </div>
+      </div>
+      <!-- End blog entry -->
+    <!-- END ALL BLOG ENTRIES -->
     </div>
+    <hr>
+    <!-- END Introduction Menu -->
+    </div>
+    <!-- END GRID -->
+    </div>
+    <br>
+    <!-- END w3-content -->
+    
     <br>
     <div class="info">
       <div class="links">
