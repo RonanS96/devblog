@@ -82,6 +82,7 @@ ul {
        padding: 12px 16px;
        z-index: 1
      }
+     
      button{
        width: 90%;
      }
@@ -106,5 +107,5 @@ ul {
 
      ul li {float: none; display: block;}
      li.fright {float: none;}
-     
+
   }
