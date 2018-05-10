@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
@@ -16,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -35,12 +36,19 @@
     <h3 class="subtitle">NOTE: This page is still under construction.</h3>
     <br>
 
-    <p class="info">• <a href="article/formallanguages.html">Formal Languages</a></p>
-    <p class="info">• <a href="grades/highschool.html">High School Grades</a></p>
-    <p class="info">• <a href="projects/all.html">Personal Projects</a></p>
-    <p class="info">• <a href="grades/university.html">University Classes and Grades</a></p>
-    <p class="info">• <a href="projects/coursework.html">University Projects</a></p>
-
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <br>
+          <p class="info">• <a href="article/formallanguages.html">Formal Languages</a></p>
+          <p class="info">• <a href="grades/highschool.html">High School Grades</a></p>
+          <p class="info">• <a href="projects/coursework.html">Personal Projects</a></p>
+          <p class="info">• <a href="grades/university.html">University Classes and Grades</a></p>
+          <p class="info">• <a href="projects/all.html">University Projects</a></p>
+          <br>
+        </div>
+    </div>
     <br>
     <!-- Links to professional sites like GitHub and LinkedIn -->
     <div class="info">

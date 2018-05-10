@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="../img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
@@ -17,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -35,39 +36,46 @@
     <h1 class="nametitle">My Development Blog</h1>
     <h3 class="subtitle">A blog which aims to describe me and my work in a simple but interesting way.</h3>
     <br>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <br>
+          <div class="info">
+            <div>
+              <p align="left">
+                 I have created a simple 'development blog' to show off some of my work as well as to post updates on my path
+                 through university.  In addition I will be writing some small articles on computer science related subjects,
+                the first of which is <a href="../article/formallanguages.html">Formal Languages</a>, which talks about what is meant
+                by the term 'formal language', what they are used for and how they are defined.
+                 If you are reading this, then my blog is working (at least partly).
+              </p>
+              <p align="left">
+                To get started, I am using static HTML pages where I can update blog items and information on my university
+                and personal projects simply through editing the source code.  Each page should follow the same style as the others
+                and each page will contain a navigation bar at the top and bottom so you can move between pages on the site with ease.
+                The consistent style of the webpages is controlled through a main CSS file.
+              </p>
+              <p align="left">
+                Over time I will look to improve the site so that the blog can be updated via some user interface and will store information
+                in a database.
+              </p>
+              <p align="left">
+                I have decided to code from scratch, i.e not using any templates or frameworks, but this may
+                change in a future iteration of the development of this blog.
+              </p>
+            </div>
+          </div>
 
-    <div class="info">
-      <div>
-        <p align="left">
-           I have created a simple 'development blog' to show off some of my work as well as to post updates on my path
-           through university.  In addition I will be writing some small articles on computer science related subjects,
-          the first of which is <a href="../article/formallanguages.html">Formal Languages</a>, which talks about what is meant
-          by the term 'formal language', what they are used for and how they are defined.
-           If you are reading this, then my blog is working (at least partly).
-        </p>
-        <p align="left">
-          To get started, I am using static HTML pages where I can update blog items and information on my university
-          and personal projects simply through editing the source code.  Each page should follow the same style as the others
-          and each page will contain a navigation bar at the top and bottom so you can move between pages on the site with ease.
-          The consistent style of the webpages is controlled through a main CSS file.
-        </p>
-        <p align="left">
-          Over time I will look to improve the site so that the blog can be updated via some user interface and will store information
-          in a database.
-        </p>
-        <p align="left">
-          I have decided to code from scratch, i.e not using any templates or frameworks, but this may
-          change in a future iteration of the development of this blog.
-        </p>
+          <div class="info">
+              <div class="proflink"><p>View this project on Github: </p><a class="proflink" href="https://github.com/RonanS96/devblog" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+          </div>
+          <br>
+        </div>
       </div>
-    </div>
-
-    <div class="info">
-        <div class="proflink"><p>View this project on Github: </p><a class="proflink" href="https://github.com/RonanS96/devblog" style="text-decoration:none;">
-            <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-              <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                &nbsp;</span></a></div>
-    </div>
 
     <br>
     <div class="info">

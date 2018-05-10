@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="../img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
@@ -34,93 +35,101 @@
     <h3 class="subtitle">(<a href="FormalLanguages.pdf">PDF version</a>)</h3>
     <br>
 
-    <div class="info">
-      <p align="left">A formal language is one which is designed to be used in a situation where natural language
-        cannot be used – for example when communicating with a computer.  It is much more strictly structured and
-        less complex and ambiguous than a natural language.  Formal languages are everywhere and have been around
-        for a long time.  Here are some examples:</p>
-      <p>• The set of dates in the form 'DD/MM/YYYY'.</p>
-      <p>• Your name in the form 'Joe W. Bloggs'.</p>
-      <p>•	Arithmetic expressions such as ‘1+3’ or ‘(4x5)+2’.</p>
-      <p>•	Predicates of first-order logic, for example ‘∀x.(x=y)’.</p>
-      <p>•	Computer programming languages such as Java and C.</p>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <br>
+          <div class="info">
+            <p align="left">A formal language is one which is designed to be used in a situation where natural language
+              cannot be used – for example when communicating with a computer.  It is much more strictly structured and
+              less complex and ambiguous than a natural language.  Formal languages are everywhere and have been around
+              for a long time.  Here are some examples:</p>
+            <p>• The set of dates in the form 'DD/MM/YYYY'.</p>
+            <p>• Your name in the form 'Joe W. Bloggs'.</p>
+            <p>•	Arithmetic expressions such as ‘1+3’ or ‘(4x5)+2’.</p>
+            <p>•	Predicates of first-order logic, for example ‘∀x.(x=y)’.</p>
+            <p>•	Computer programming languages such as Java and C.</p>
 
-      <p align="left">A formal language is made up of a set of atomic symbols called tokens, and a set of sentences,
-        which are strings of these tokens. Some example tokens are shown below:</p>
-      <p>•	0, 1, 2, 3, …</p>
-      <p>•	+, -, ÷, x, …</p>
-      <p>•	+, -, ÷, x, …</p>
-      <p>•	α, β, γ, . . . </p>
-      <p>In a programming language such as C, the keywords ‘if’, ‘then’ and ‘else’ might be considered
-        as tokens, and the process carried out by the compiler to check that a source program is made up of only
-        accepted tokens is called lexical analysis.</p>
-      <p>But how do we define a formal language? One way is to use regular expressions or regexes.  A regex
-        determines the language by specifying the set of sentences that can be accepted.  Here is some syntax followed by
-        examples of regular expressions:</p>
+            <p align="left">A formal language is made up of a set of atomic symbols called tokens, and a set of sentences,
+              which are strings of these tokens. Some example tokens are shown below:</p>
+            <p>•	0, 1, 2, 3, …</p>
+            <p>•	+, -, ÷, x, …</p>
+            <p>•	+, -, ÷, x, …</p>
+            <p>•	α, β, γ, . . . </p>
+            <p>In a programming language such as C, the keywords ‘if’, ‘then’ and ‘else’ might be considered
+              as tokens, and the process carried out by the compiler to check that a source program is made up of only
+              accepted tokens is called lexical analysis.</p>
+            <p>But how do we define a formal language? One way is to use regular expressions or regexes.  A regex
+              determines the language by specifying the set of sentences that can be accepted.  Here is some syntax followed by
+              examples of regular expressions:</p>
 
-      <table align="center" border="1">
-        <tr><td>.</td><td>Matches any single character except newline.</td></tr>
-        <tr><td>R*</td><td>Matches zero or more occurences of R.</td></tr>
-        <tr><td>[]</td><td>Matches any character inside the brackets. This can be negated using the circumflex ‘^’ inside the brackets.</td></tr>
-        <tr><td>[0-9]</td><td>Match any character in the range 0 to 9. This works on any range of ASCII characters.</td></tr>
-        <tr><td>^</td><td>Matches the beginning of a line or as negation when used inside square brackets.</td></tr>
-        <tr><td>$</td><td>Matches the end of a line.</td></tr>
-        <tr><td>{x}</td><td>Where x is a number, it tells us how many times the previous pattern can match, and using {x, y} we can say it can match between x and y times.</td></tr>
-        <tr><td>\</td><td>Used to escape a meta-character.  For example \* denotes an asterisk.</td></tr>
-        <tr><td>R+</td><td>Matches one or more occurrences of R.</td></tr>
-        <tr><td>R?</td><td>Matches zero or more occurrences of R.</td></tr>
-        <tr><td>|</td><td>Matches that on the left or that on the right, for example X | Y matches X, or Y, but not XY.</td></tr>
-        <tr><td>" "</td><td>Everything within the quotation marks is interpreted literally.</td></tr>
-        <tr><td>R/S</td><td>Matches R but only if it is followed by S.</td></tr>
-        <tr><td>()</td><td>Groups together a series of regexes into one large regex.</td></tr>
-      </table>
-      <br>
-      <p align="left">Examples:</p>
-      <p>•	a* - matches the language of possibly empty strings of a. language(a*) = { [ ], a, aa, aaa, …}.</p>
-      <p>•	a*b* - matches the language of possibly empty strings of as followed by bs.  language(a*b*) = { [ ], a, aa, aaa, …, b, bb, bbb, …, ab, abb, aab, aabb, … }.</p>
-      <p>•	[a-z]+[\.\?!] – matches one or more lowercase letters from the alphabet, followed by a full stop, a question mark or an exclamation mark.  ‘hi!’ would be accepted but ‘hi’ or ‘hi,’ would not.</p>
-      <p align="left">A great way to test your skills with regexes is using online tester ‘Regex Pal’ at the following URL: <a href="http://www.regexpal.com/">http://www.regexpal.com/</a>.</p>
-      <p align="left">Another way to generate a formal language is by using formal grammars.  These can be used to define which sentences can be accepted by the language and to generate example sentences in the language.
-        First, we must break down the set of tokens or vocabulary of the language V into two distinct sets – terminal symbols and nonterminal symbols.  A nonterminal symbol is one which can be broken down into some other
-        arrangement of terminal and/or nonterminal symbols and a terminal symbol is one which can not be broken down any more and is a concrete part of a sentence.  A grammar is made up of 4 things:</p>
-      <p>•	N – a set of nonterminal symbols; usually denoted A, B, C, …</p>
-      <p>•	T – a set of terminal symbols; usually denoted a, b, c, …</p>
-      <p>•	S – A start symbol, which is in N.</p>
-      <p>•	P – A set of production rules α ::= β.</p>
-      <p align="left">The language a* (the set of possibly empty strings of a) described above can be defined using a formal grammar in the following way:</p>
-      <p align="left">S ::= aS | ε		Start Symbol: S</p>
-      <p align="left">It can be seen here that from the start symbol S, there are only two options for strings of characters;
-        either a single a which recursively returns to S and starts again, or the epsilon symbol ‘ε’ which means the empty string.
-        The string aaa is accepted in the following way:</p>
-      <p align="left">S => aS => aaS => aaaS => aaa</p>
-      <p align="left">The start symbol must be explicitly made clear as has been shown above with ‘Start Symbol: S’.</p>
-      <p align="left">There are many different types of grammars, each of which is effective in different situations.  These are defined using the Chomsky classification of Grammars, which splits them up into four different types:</p>
-      <p align="left"><b>Type 0 Grammars</b></p>
-      <p align="left">These are the most common and generate recursively enumerable languages.  There are no restrictions on what a type 0 grammar can be and they have productions of the form:  </p>
-      <p align="left">α ::= β</p>
-      <p align="left">where α is a nonempty string of nonterminal and terminal symbols with at least one nonterminal. </p>
-      <p align="left"><b>Type 1 (Context Sensitive) Grammars</b></p>
-      <p align="left">These have productions of the following form: </p>
-      <p align="left">α A β ::= α γ β</p>
-      <p align="left">which means the nonterminal A can be expanded to the string of terminal and/or nonterminal symbols γ as long as it is in the context described by α and β.</p>
-      <p align="left"><b>Type 2 (Context Free) Grammars</b></p>
-      <p align="left">These grammars have productions of the form: </p>
-      <p align="left">A ::= γ</p>
-      <p align="left">where A is a single nonterminal symbol and γ is a string of terminal and nonterminal symbols.  Context free grammars are useful for representing balanced bracketing, which cannot be done with the other grammars described here.</p>
-      <p align="left"><b>Type 3 (Regular) Grammars</b></p>
-      <p align="left">Regular grammars must have a single nonterminal on the left hand side and either a single terminal symbol, a single terminal symbol followed by a single nonterminal, or the empty symbol ε on the right hand side:</p>
-      <p align="left">A ::= aB</p>
-      <p align="left">A ::= b</p>
-      <p align="left">A ::= ε</p>
-      <p align="left">Regular expressions describe regular grammars.
-        Further clarification on these classifications and examples can be found at reference [1]. </p>
-      <p align="left">The illustration below shows us that the grammars are all related:
-        <img align="" src="Chomsky.jpg"></img></p>
-      <p align="left">Figure 1 – an illustration of how each of the grammars fit together [1].</p>
-      <p align="left">All regular grammars can be represented by context free grammars, all context free grammars can be represented by context sensitive grammars and type 3, type 2 and type 1 grammars are all examples of type 0 grammars.</p>
-      <p align="left">To conclude, a formal language is one which is used in situations where ambiguous languages like natural language cannot be used.  A formal language can be represented in many different ways such as through regexes or formal grammars and it can be used to define a structure and a set of rules to the input strings you are providing a computer system. Formal languages are also extremely useful for keeping data consistent (for example when providing dates in the form        DD/MM/YYYY) and they help us with many different things that are essential for the implementation of computer software and the use of the electronic computer.</p>
-      <p align="left">References: </p>
-      <p align="left">1.	Chomsky Classification of Grammars [online]. Available from <a href="https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm">https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm</a>. [Accessed 01/08/2017].</p>
+            <table align="center" border="1">
+              <tr><td>.</td><td>Matches any single character except newline.</td></tr>
+              <tr><td>R*</td><td>Matches zero or more occurences of R.</td></tr>
+              <tr><td>[]</td><td>Matches any character inside the brackets. This can be negated using the circumflex ‘^’ inside the brackets.</td></tr>
+              <tr><td>[0-9]</td><td>Match any character in the range 0 to 9. This works on any range of ASCII characters.</td></tr>
+              <tr><td>^</td><td>Matches the beginning of a line or as negation when used inside square brackets.</td></tr>
+              <tr><td>$</td><td>Matches the end of a line.</td></tr>
+              <tr><td>{x}</td><td>Where x is a number, it tells us how many times the previous pattern can match, and using {x, y} we can say it can match between x and y times.</td></tr>
+              <tr><td>\</td><td>Used to escape a meta-character.  For example \* denotes an asterisk.</td></tr>
+              <tr><td>R+</td><td>Matches one or more occurrences of R.</td></tr>
+              <tr><td>R?</td><td>Matches zero or more occurrences of R.</td></tr>
+              <tr><td>|</td><td>Matches that on the left or that on the right, for example X | Y matches X, or Y, but not XY.</td></tr>
+              <tr><td>" "</td><td>Everything within the quotation marks is interpreted literally.</td></tr>
+              <tr><td>R/S</td><td>Matches R but only if it is followed by S.</td></tr>
+              <tr><td>()</td><td>Groups together a series of regexes into one large regex.</td></tr>
+            </table>
+            <br>
+            <p align="left">Examples:</p>
+            <p>•	a* - matches the language of possibly empty strings of a. language(a*) = { [ ], a, aa, aaa, …}.</p>
+            <p>•	a*b* - matches the language of possibly empty strings of as followed by bs.  language(a*b*) = { [ ], a, aa, aaa, …, b, bb, bbb, …, ab, abb, aab, aabb, … }.</p>
+            <p>•	[a-z]+[\.\?!] – matches one or more lowercase letters from the alphabet, followed by a full stop, a question mark or an exclamation mark.  ‘hi!’ would be accepted but ‘hi’ or ‘hi,’ would not.</p>
+            <p align="left">A great way to test your skills with regexes is using online tester ‘Regex Pal’ at the following URL: <a href="http://www.regexpal.com/">http://www.regexpal.com/</a>.</p>
+            <p align="left">Another way to generate a formal language is by using formal grammars.  These can be used to define which sentences can be accepted by the language and to generate example sentences in the language.
+              First, we must break down the set of tokens or vocabulary of the language V into two distinct sets – terminal symbols and nonterminal symbols.  A nonterminal symbol is one which can be broken down into some other
+              arrangement of terminal and/or nonterminal symbols and a terminal symbol is one which can not be broken down any more and is a concrete part of a sentence.  A grammar is made up of 4 things:</p>
+            <p>•	N – a set of nonterminal symbols; usually denoted A, B, C, …</p>
+            <p>•	T – a set of terminal symbols; usually denoted a, b, c, …</p>
+            <p>•	S – A start symbol, which is in N.</p>
+            <p>•	P – A set of production rules α ::= β.</p>
+            <p align="left">The language a* (the set of possibly empty strings of a) described above can be defined using a formal grammar in the following way:</p>
+            <p align="left">S ::= aS | ε		Start Symbol: S</p>
+            <p align="left">It can be seen here that from the start symbol S, there are only two options for strings of characters;
+              either a single a which recursively returns to S and starts again, or the epsilon symbol ‘ε’ which means the empty string.
+              The string aaa is accepted in the following way:</p>
+            <p align="left">S => aS => aaS => aaaS => aaa</p>
+            <p align="left">The start symbol must be explicitly made clear as has been shown above with ‘Start Symbol: S’.</p>
+            <p align="left">There are many different types of grammars, each of which is effective in different situations.  These are defined using the Chomsky classification of Grammars, which splits them up into four different types:</p>
+            <p align="left"><b>Type 0 Grammars</b></p>
+            <p align="left">These are the most common and generate recursively enumerable languages.  There are no restrictions on what a type 0 grammar can be and they have productions of the form:  </p>
+            <p align="left">α ::= β</p>
+            <p align="left">where α is a nonempty string of nonterminal and terminal symbols with at least one nonterminal. </p>
+            <p align="left"><b>Type 1 (Context Sensitive) Grammars</b></p>
+            <p align="left">These have productions of the following form: </p>
+            <p align="left">α A β ::= α γ β</p>
+            <p align="left">which means the nonterminal A can be expanded to the string of terminal and/or nonterminal symbols γ as long as it is in the context described by α and β.</p>
+            <p align="left"><b>Type 2 (Context Free) Grammars</b></p>
+            <p align="left">These grammars have productions of the form: </p>
+            <p align="left">A ::= γ</p>
+            <p align="left">where A is a single nonterminal symbol and γ is a string of terminal and nonterminal symbols.  Context free grammars are useful for representing balanced bracketing, which cannot be done with the other grammars described here.</p>
+            <p align="left"><b>Type 3 (Regular) Grammars</b></p>
+            <p align="left">Regular grammars must have a single nonterminal on the left hand side and either a single terminal symbol, a single terminal symbol followed by a single nonterminal, or the empty symbol ε on the right hand side:</p>
+            <p align="left">A ::= aB</p>
+            <p align="left">A ::= b</p>
+            <p align="left">A ::= ε</p>
+            <p align="left">Regular expressions describe regular grammars.
+              Further clarification on these classifications and examples can be found at reference [1]. </p>
+            <p align="left">The illustration below shows us that the grammars are all related:
+              <img align="" src="Chomsky.jpg"></img></p>
+            <p align="left">Figure 1 – an illustration of how each of the grammars fit together [1].</p>
+            <p align="left">All regular grammars can be represented by context free grammars, all context free grammars can be represented by context sensitive grammars and type 3, type 2 and type 1 grammars are all examples of type 0 grammars.</p>
+            <p align="left">To conclude, a formal language is one which is used in situations where ambiguous languages like natural language cannot be used.  A formal language can be represented in many different ways such as through regexes or formal grammars and it can be used to define a structure and a set of rules to the input strings you are providing a computer system. Formal languages are also extremely useful for keeping data consistent (for example when providing dates in the form        DD/MM/YYYY) and they help us with many different things that are essential for the implementation of computer software and the use of the electronic computer.</p>
+            <p align="left">References: </p>
+            <p align="left">1.	Chomsky Classification of Grammars [online]. Available from <a href="https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm">https://www.tutorialspoint.com/automata_theory/chomsky_classification_of_grammars.htm</a>. [Accessed 01/08/2017].</p>
+          </div>
+          <br>
+        </div>
     </div>
     <br>
     <div class="info">

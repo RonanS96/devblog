@@ -4,6 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="../img/logo.png">
     <!-- Bootstrap links -->
       <!-- Latest compiled and minified CSS -->
@@ -19,7 +20,7 @@
 
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -38,499 +39,526 @@
     <h3 class="subtitle">Projects I have undertaken as part of a university assessment.</h3>
     <h4 class="subtitle">For information on some of my personal projects, click <a href="coursework.html">here</a>.</h4>
     <br>
-    <div class="timeline">
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col">
       <h3 class="subtitle"><b>Current Year (4):</b></h3>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>4th Year Honours Project</a></h3>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>4th Year Honours Project</b></h3>
+          <h5><i>An Online Tool to Choose a Programming Language</i><h5>
+          <h5>18th September 2017 - 23rd April, 2018</h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 18th September 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 7th May 2018</div>
-        </div>
-        <div class="info">
-          This year I will be working on an honours project worth 30% of my overall BSc Degree.  My project is to build an
-          online tool which can be used by computer programmers to decide which programming language is best to use given
-          their problem domain.
-        </div>
-        <div class="info">
-          Technologies used: HTML, CSS, MySQL, PHP.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>E-Commerce Technology: Presentation</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 14th March 2018</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 29th March 2018</div>
-        </div>
-        <div class="info">
-          For my e-Commerce Technology module, I will be carrying out a presentation discussing blockchain technology, and more speciffically answering the question
-          <i>can blockchain technology be used to turn supply chain into demand chain?</i>.  This is to be carried out in a group of 4.
-        </div>
-        <div class="info">
-          Technologies used: Google Docs, Google Slides, Google Drive.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="cinc.html">Computing in the Classroom: Presentation</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 19th March 2018</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 29th March 2018</div>
-        </div>
-        <div class="info">
-          For my Computing in the classroom module, I will be carrying out a presentation discussing my personal project and my time at West Calder High School.
-        </div>
-        <div class="info">
-          Technologies used: Thunkable.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Literature Review: Linked Data and Semantic Technologies</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 15th February 2018</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 22nd March 2018</div>
-        </div>
-        <div class="info">
-          This coursework assignment involves writing a 1500 word literature review to describe semantic technologies, the semantic web and
-          Linked Data.
-        </div>
-        <div class="info">
-          Technologies used: Microsoft Word.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a href="cinc.html">Computing in the Classroom Personal Project</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 9th October 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 15th March 2018</div>
-        </div>
-        <div class="info">
-          For my Computing in the classroom module, I will be working on a personal project which involves
-          taking the lead in teaching the class and carrying out a report.  I have decide that I will use this opportunity
-          to teach the third year class I have been working with how to create Android apps using MIT App Inventor.
-          I will also prepare some introductory material allowing me to teach the class some of the fundamentals about
-          mobile application developmnent.
-        </div>
-        <div class="info">
-          Technologies used: Microsoft PowerPoint.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>NoSQL Data Storage</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 15th January 2018</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 15th February 2018</div>
-        </div>
-        <div class="info">
-          This coursework assignment involves transforming a relational database, storing information about airports,
-          airlines and flight routes, into a NoSQL system with the aim of increasing the speed of response time for
-          retrieval of the data.  We are using a subset of data from the <a target="_blank" href="https://openflights.org">open flights website</a>
-          which contains 6162 airlines and 7184 airports, connected by 67663 routes.  These routes are between 6649 cities
-          in 260 different countries.
-        </div>
-        <div class="info">
-          Technologies used: MySQL, PHP, JSON, MongoDB.
-        </div>
-        <div class="info">
-            <div class="proflink"><a class="proflink" target="_blank" target="_blank" href="https://github.com/RonanS96/SQL2JSON-public/" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                      &nbsp;</span></a></div>
-                      <div class="proflink">
 
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Business Process Models</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 22nd January 2018</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 7th March 2018</div>
-        </div>
-        <div class="info">
-          This coursework assignment is part of the eCommerce Technology course I am studying this semester.
-          It involves creating a business process model for eBay.com.
-        </div>
-        <div class="info">
-          Technologies used: IDEF3 Process Models.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Artificial Neural Network</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 25th September 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 1st November 2017</div>
-        </div>
-        <div class="info">
-          This coursework, to be carried out for my Biologically Inspired Computation module, involves writing a
-          Multilayer Perceptron (MLP) artificial neural network to carry out function approximation.
-        </div>
-        <div class="info">
-          Technologies used: Java.
-        </div>
-        <div class="info">
-
-            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></div>
-            <div class="proflink">
-
-        </div>
-      </div>
-        <div class="item">
-          <div class="item-title">
-            <h3 class="item-title"><a>Evolutionary Algorithm</a></h3>
+        <div class="w3-container">
+          <p>
+            This year I will be working on an honours project worth 30% of my overall BSc Degree. My project is to build an online tool which can be used by computer programmers to decide which programming language is best to use given their problem domain.
+          </p>
+          <div class="w3-row">
+            Technologies used: HTML, CSS, JavaScript, MySQL, PHP.
           </div>
-          <div class="item-date">
-            <div class="date-posted">Start Date: 25th September 2017</div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>E-Commerce Technology</b></h3>
+          <h5><i>Can Blockchain technology be used to turn supply chain into demand chain?</i></h5>
+          <h5>14th March, 2018 - 29th March, 2018</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            For my e-Commerce Technology module, I will be carrying out a presentation discussing blockchain technology, and more speciffically answering the question
+            <i>can blockchain technology be used to turn supply chain into demand chain?</i>.  This is to be carried out in a group of 4.
+          </p>
+          <div class="w3-row">
+            Technologies used: Google Docs, Google Slides, Google Drive.
           </div>
-          <div class="item-date">
-            <div class="date-posted">End Date: 1st November 2017</div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Computing in the Classroom: Presentation</b></h3>
+          <h5>19th March, 2018 - 29th March, 2018</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            For my Computing in the classroom module, I will be carrying out a presentation discussing my personal project and my time at West Calder High School.
+          </p>
+          <div class="w3-row">
+            Technologies used: Microsoft Powerpoint, Google Docs.
+          </div>
+          <div class="w3-col m8 s12">
+            <p><a href="cinc.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>More Info »</b></button></a></p>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Linked Data and Semantic Technologies</b></h3>
+          <h5>15th February, 2018 - 22nd March, 2018</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This coursework assignment involved writing a 1500 word literature review to describe semantic technologies, the semantic web and
+            Linked Data and their use cases in the world of Big Data.
+          </p>
+          <div class="w3-row">
+            Technologies used: Microsoft Word.
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Computing in the Classroom Personal Project</b></h3>
+          <h5>9th October, 2017 - 15th March, 2018</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            For my Computing in the classroom module, I will be working on a personal project which involves
+            taking the lead in teaching the class and carrying out a report.  I have decide that I will use this opportunity
+            to teach the third year class I have been working with how to create Android apps using an online tool called Thunkable.
+            I will also prepare some introductory material allowing me to teach the class some of the fundamentals about
+            mobile application developmnent.
+          </p>
+          <div class="w3-row">
+            Technologies used: Microsoft PowerPoint, Thunkable.
+          </div>
+          <div class="w3-col m8 s12">
+            <p><a href="cinc.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>More Info »</b></button></a></p>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>NoSQL Data Storage</b></h3>
+          <h5>15th January, 2018 - 15th February, 2018</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This coursework assignment involves transforming a relational database, storing information about airports,
+            airlines and flight routes, into a NoSQL system with the aim of increasing the speed of response time for
+            retrieval of the data.  We are using a subset of data from the <a target="_blank" href="https://openflights.org">open flights website</a>
+            which contains 6162 airlines and 7184 airports, connected by 67663 routes.  These routes are between 6649 cities
+            in 260 different countries.
+          </p>
+          <div class="w3-row">
+            Technologies used: MySQL, PHP, JSON MongoDB.
           </div>
           <div class="info">
+              <div class="proflink"><a class="proflink" target="_blank" target="_blank" href="https://github.com/RonanS96/SQL2JSON-public/" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                      <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                        &nbsp;</span></a></div>
+                        <div class="proflink"></div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Business Process Models</b></h3>
+          <h5>22nd January, 2018 - 7th March, 2018</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This coursework assignment is part of the eCommerce Technology course I am studying this semester. It involves creating a business process model for eBay.com.
+          </p>
+          <div class="w3-row">
+            Technologies used: IDEF3 Business Process Modelling.
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Artificial Neural Network</b></h3>
+          <h5>25th September, 2017 - 1st November, 2017</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
+            This coursework, to be carried out for my Biologically Inspired Computation module, involves writing a
+            Multilayer Perceptron (MLP) artificial neural network to carry out function approximation.
+          </p>
+          <div class="w3-row">
+            Technologies used: Java.
+          </div>
+          <div class="info">
+              <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+              <div class="proflink"></div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Evolutionary Algorithm</b></h3>
+          <h5>25th September, 2017 - 1st November, 2017</h5>
+        </div>
+
+        <div class="w3-container">
+          <p>
             This coursework, to be carried out for my Biologically Inspired Computation module, involves writing an
             evolutionary algorithm to solve the travelling salesman problem, using a dataset containing the latitude and
             longitude of 980 locations in Luxemburg.
-          </div>
-          <div class="info">
+          </p>
+          <div class="w3-row">
             Technologies used: Java.
           </div>
+          <div class="info">
+              <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+              <div class="proflink"></div>
+          </div>
+          <br>
         </div>
-        <div class="info">
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Genetic Programming in ECJ</b></h3>
+          <h5>1st November, 2017 - 29th November, 2017</h5>
+        </div>
 
-            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/EvolutionaryAlgorithm-NeuralNetwork/" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></div>
-            <div class="proflink">
+        <div class="w3-container">
+          <p>
+            This project involves experimenting with genetic programming on a selection of standard benchmarking problems using a software package called ECJ and writing a 5 page report.
+          </p>
+          <div class="w3-row">
+            Technologies used: ECJ.
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Data Mining</b></h3>
+          <h5>2nd October, 2017 - 20th November, 2017</h5>
+        </div>
 
+        <div class="w3-container">
+          <p>
+            Using the WEKA 3 program to load in and analyse datasets from a number of different domains and
+            write a report on my findings.  I will be carrying out data analysis using techniques such as
+            attribute selection, clustering and Bayesian networks.
+          </p>
+          <div class="w3-row">
+            Technologies used: WEKA 3, Microsoft Excel, CSV files.
+          </div>
+          <br>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Genetic Programming in ECJ</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <h3 class="subtitle"><b>Past Years (1-3):</b></h3>
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>A* Search</b></h3>
+          <h5>20th September 2016 - 20th November, 2016</h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 1st November 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 29th November 2017</div>
-        </div>
-        <div class="info">
-          This project involves experimenting with genetic programming on a selection of standard benchmarking
-          problems using a software package called ECJ and writing a 5 page report.
-        </div>
-        <div class="info">
-          Technologies used: ECJ.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Data Mining</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 2nd October 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 20th November 2017</div>
-        </div>
-        <div class="info">
-          Using the WEKA 3 program to load in and analyse datasets from a number of different domains and
-          write a report on my findings.  I will be carrying out data analysis using techniques such as
-          attribute selection, clustering and Bayesian networks.
-        </div>
-        <div class="info">
-          Technologies used: WEKA 3, Microsoft Excel.
-        </div>
-      </div>
 
+        <div class="w3-container">
+          <p>
+            I worked with a partner to produce a program which could find the shortest
+            path between points on a grid using the A* search algorithm.  The second part of
+            this assignment involved writing PDDL scripts for different scenarios.
+          </p>
+          <div class="w3-row">
+            Technologies used: Python 3, Heuristics, A* Search, PDDL/STRIPS.
+          </div>
+          <div class="info">
+              <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/jmcculloch796/robotplanner" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+              <div class="proflink"></div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Compiler/Recursive Descent Parser</b></h3>
+          <h5>23rd January, 2017 - 23rd February, 2017</h5>
+        </div>
 
-      <h3 class="subtitle"><b>Past Years:</b></h3>
+        <div class="w3-container">
+          <p>
+            Built the front end of a compiler for a simple, fictional programming language called
+            'FUNC'.  This involved creating a C program to perform lexical analysis and a recursive
+            descent parser which carried out syntax analysis and produced an Abstract Syntax Tree (AST).
+          </p>
+          <div class="w3-row">
+            Technologies used: C, Makefiles.
+          </div>
+          <div class="info">
+              <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/RecursiveDescentParser" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+              <div class="proflink"></div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Delivery Company Database</b></h3>
+          <h5>25th January, 2015 - 30th March, 2015</h5>
+        </div>
 
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>A* Search </a></h3>
+        <div class="w3-container">
+          <p>
+            Worked in a group of 5, which later dropped to 4, to produce a database for
+            a fictional parcel delivery company.  This had to be done from scratch, i.e
+            we had to come up with our own scenario and conceptual model, then had to come
+            up with a relational schema before implementing it in MySQL.  We also came up
+            with test data to populate the database, queries and indexes to improve efficiency.
+            The final stage of this coursework was to connect it to a Java application which
+            had to access the database securely and without risk of SQL injection.
+          </p>
+          <div class="w3-row">
+            Technologies used: MySQL, Java, XML.
+          </div>
+          <br>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 20th September 2016</div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Flight Itinerary</b></h3>
+          <h5>10th October, 2016 - 26th November, 2016</h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 20th November 2016</div>
-        </div>
-        <div class="info">
-          I worked with a partner to produce a program which could find the shortest
-          path between points on a grid using the A* search algorithm.  The second part of
-          this assignment involved writing PDDL scripts for different scenarios.
-        </div>
-        <div class="info">
-          Technologies used: Python, Heuristics, A* search, PDDL/STRIPS.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="aii2016.pdf">Assignment Sheet</a>]
-        </div>
-        <div class="info">
 
-            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/jmcculloch796/robotplanner" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></div>
-            <div class="proflink">
+        <div class="w3-container">
+          <p>
+            This coursework assignment involved using the graph data structure to store
+            information about airports and the costs to fly between them.  A user could then
+            enter which airports they wanted to fly between and the program would use
+            Dijkstra's algorithm to find the shortest (cheapest cost) path.  It was also intelligent enough to
+            choose a path through multiple airports if that was the cheapest option.
+          </p>
+          <div class="w3-row">
+            Technologies used: Java.
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Lambda Calculus Translator</b></h3>
+          <h5>10th October, 2016 - 16th November, 2016</h5>
+        </div>
 
+        <div class="w3-container">
+          <p>
+            This assignment involved writing an SML program to translate between the regular
+            lambda calculus and another form called item lambda calculus.  We were
+            given some starter code but had to change it to work with item notation as well
+            as regular notation and we were also given a long list of tests to carry out on our solution.
+          </p>
+          <div class="w3-row">
+            Technologies used: SML.
+          </div>
+          <div class="info">
+              <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/LambdaTranslator.git" style="text-decoration:none;">
+                  <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                    <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
+                      &nbsp;</span></a></div>
+              <div class="proflink"></div>
+           </div>
+          <br>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Compiler/Recursive Descent Parser</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Gambit Resource Allocation System (G.R.A.S)</b></h3>
+          <h5>20th September, 2016 - 3rd April, 2017</h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 23rd January 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 23rd February 2017</div>
-        </div>
-        <div class="info">
-          Built the front end of a compiler for a simple, fictional programming language called
-          'FUNC'.  This involved creating a C program to perform lexical analysis and a recursive
-          descent parser which carried out syntax analysis and produced an Abstract Syntax Tree (AST).
-        </div>
-        <div class="info">
-          Technologies used: C, Makefiles.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="lp2017.pdf">Assignment Sheet</a>]
-        </div>
-        <div class="info">
 
-            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/RecursiveDescentParser" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></div>
-            <div class="proflink">
+        <div class="w3-container">
+          <p>
+            Our <b>third year group project</b> at university.  We were tasked with building a system that could assign
+            employees to projects in an intelligent manner for the global science and technology company, Leidos.
+          </p>
+          <div class="w3-row">
+            Technologies used: CakePHP, XAMPP, Java.
+          </div>
+          <div class="w3-col m8 s12">
+            <p><a href="gras.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>More Info »</b></button></a></p>
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Hit the Target!</b></h3>
+          <h5>15th September, 2014 - 5th November, 2014</h5>
+        </div>
 
+        <div class="w3-container">
+          <p>
+            This was one of the first coursework assignments I undertook at university and was done individually. It involved creating an Android app for mobile phones using the online application MIT App Inventor, which uses block programming. We later worked on a currency converter app in Java using the Eclipse IDE.
+          </p>
+          <div class="w3-row">
+            Technologies used: MIT App Inventor, Java, XML.
+          </div>
+          <br>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Delivery Company Database</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Kerr & Brown Shoe Shop</b></h3>
+          <h5>15th October, 2015 - 10th December, 2015</h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 25th January 2015</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 30th March 2015</div>
-        </div>
-        <div class="info">
-          Worked in a group of 5, which later dropped to 4, to produce a database for
-          a fictional parcel delivery company.  This had to be done from scratch, i.e
-          we had to come up with our own scenario and conceptual model, then had to come
-          up with a relational schema before implementing it in MySQL.  We also came up
-          with test data to populate the database, queries and indexes to improve efficiency.
-          The final stage of this coursework was to connect it to a Java application which
-          had to access the database securely and without risk of SQL injection.
-        </div>
-        <div class="info">
-          Technologies used: MySQL, Java, XML.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="dbms.pdf">Assignment Sheet</a>]
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Flight Itinerary</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 10th October 2016</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 26th November 2016</div>
-        </div>
-        <div class="info">
-          This coursework assignment involved using the graph data structure to store
-          information about airports and the costs to fly between them.  A user could then
-          enter which airports they wanted to fly between and the program would use
-          Dijkstra's algorithm to find the shortest (cheapest cost) path.  It was also intelligent enough to
-          choose a path through multiple airports if that was the cheapest option.
-        </div>
-        <div class="info">
-          Technologies used: Java, Java Libraries.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="dsa2015.pdf">Assignment Sheet</a>]
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Foundations 1</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 10th October 2016</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 16th November 2016</div>
-        </div>
-        <div class="info">
-          This assignment involved writing an SML program to translate between the regular
-          lambda calculus and another form called item lambda calculus.  We were
-          given some starter code but had to change it to work with item notation as well
-          as regular notation and we were given a long list of tests to carry out on our solution
-          also.
-        </div>
-        <div class="info">
-          Technologies used: SML.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="fo116.pdf">Assignment Sheet</a>]
-        </div>
-        <div class="info">
 
-            <div class="proflink"><a class="proflink" target="_blank" href="https://github.com/RonanS96/LambdaTranslator.git" style="text-decoration:none;">
-                <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                  <img src="github-mark.png" width="40" height="20" alt="View this peoject on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></div>
-            <div class="proflink">
+        <div class="w3-container">
+          <p>
+            This project was carried out individually for the Software Design module I
+            undertook in second year.  It involved coming up with a full design for a
+            website to be used by a fictional shoe shop.  I had to submit a report with
+            a number of different design diagrams including use case, sequence, class, activity
+            and state-machine diagrams.  We also had to outline the functional and non-functional
+            requirements of the system.
+          </p>
+          <div class="w3-row">
+            Technologies used: UML Diagrams.
+          </div>
+          <div class="info">
+            [<a target="_blank" href="sd2015.pdf">Submitted Report</a>]
+          </div>
+          <br>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Mathematical Expression Evaluator</b></h3>
+          <h5>10th January, 2017 - 21st March, 2017</h5>
+        </div>
 
+        <div class="w3-container">
+          <p>
+            Worked independently to write a program which would take a JSON script of mathematical expressions as input and output their evaluations.
+          </p>
+          <div class="w3-row">
+            Technologies used: SML, JSON.
+          </div>
+          <br>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a target="_blank" href="gras.html">Gambit Resource Allocation System (G.R.A.S)</a></h3>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3><b>Rex - The Robot Guide Dog</b></h3>
+          <h5>1st October, 2015 - 4th December, 2015</h5>
         </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 20th September 2016</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 3rd April 2017</div>
-        </div>
-        <div class="info">
-          Our <b>third year group project</b> at university.  We were tasked with building a system that could assign
-          employees to projects in an intelligent manner for the global science and technology company, Leidos.
-          Note: The online version is no longer active but I will be writing a report on the G.R.A.S soon.
-        </div>
-        <div class="info">
-          Technologies used: CakePHP, XAMPP, Java.
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Hit the Target!</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 15th September 2014</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 5th November 2014</div>
-        </div>
-        <div class="info">
-          This was one of the first coursework assignments I undertook at university and was
-          done individually.  It involved creating an Android app for mobile phones using
-          the online application MIT App Inventor, which uses block programming. We later worked
-          on a currency converter app in Java using the Eclipse IDE.
-        </div>
-        <div class="info">
-          Technologies used: Block Programming, Java, XML.
+
+        <div class="w3-container">
+          <p>
+            Worked in a group of 5 where we were given the task of coming up with the idea
+            of a product that we thought would help people.  We were told not to restrict our
+            idea with current technology.  Our idea, a robot guide dog had to be branded and
+            designed from scratch, and we presented to the class the reasons why we thought
+            it was a good idea. Click <a target="_blank" href="rex.pdf">here</a> for the presentation slides (pdf).
+            We were also asked to carry out a usability test at an expo on a prototype version
+            of our guide dog, and we came second in the class vote for best idea.
+          </p>
+          <div class="w3-row">
+            Technologies used: SML, JSON.
+          </div>
+          <br>
         </div>
       </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Kerr & Brown Shoe Shop</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 15th October 2015</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 10th December 2015</div>
-        </div>
-        <div class="info">
-          This project was carried out individually for the Software Design module I
-          undertook in second year.  It involved coming up with a full design for a
-          website to be used by a fictional shoe shop.  I had to submit a report with
-          a number of different design diagrams including use case, sequence, class, activity
-          and state-machine diagrams.  We also had to outline the functional and non-functional
-          requirements of the system.
-        </div>
-        <div class="info">
-          Technologies used: UML Diagrams.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="sd2015.pdf">Submitted Report</a>]
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a>Mathematical Expression Evaluator</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 10th January 2017</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 21st March 2017</div>
-        </div>
-        <div class="info">
-          Worked independently to write a program which would take a JSON script
-          of mathematical expressions as input and output their evaluations.
-        </div>
-        <div class="info">
-          Technologies used: SML New Jersey, JSON.
-        </div>
-        <div class="info">
-          [<a target="_blank" href="fo22017.pdf">Assignment Sheet</a>]
-        </div>
-      </div>
-      <div class="item">
-        <div class="item-title">
-          <h3 class="item-title"><a target="_blank" href="http://www2.macs.hw.ac.uk/~jm7/WebsiteForID/homepage.html">Rex - The Robot Guide Dog</a></h3>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">Start Date: 1st October 2015</div>
-        </div>
-        <div class="item-date">
-          <div class="date-posted">End Date: 4th December 2015</div>
-        </div>
-        <div class="info">
-          Worked in a group of 5 where we were given the task of coming up with the idea
-          of a product that we thought would help people.  We were told not to restrict our
-          idea with current technology.  Our idea, a robot guide dog had to be branded and
-          designed from scratch, and we presented to the class the reasons why we thought
-          it was a good idea. Click <a href="rex.pdf">here</a> for the presentation slides (pdf).
-          We were also asked to carry out a usability test at an expo on a prototype version
-          of our guide dog, and we came second in the class vote for best idea.
-        </div>
-        <div class="info">
-          Technologies used: Usabilty testing, Microsoft Office.
-        </div>
-      </div>
+      <!-- End blog entry -->
+    <!-- END ALL BLOG ENTRIES -->
     </div>
+    <hr>
+    <!-- END Introduction Menu -->
+    </div>
+    <!-- END GRID -->
+    </div>
+    <br>
+    <!-- END w3-content -->
+
     <br>
     <div class="info">
       <div class="links">

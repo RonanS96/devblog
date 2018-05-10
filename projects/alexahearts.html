@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="../img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
@@ -16,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <title>Ronan Smith Dev Blog</title>
   </head>
-  <body>
+  <body class="w3-light-grey">
     <!-- Template for navigation bar to be used on every page -->
     <div id="nav" class="navbar">
       <ul>
@@ -34,36 +35,44 @@
     <h1 class="nametitle">Alexa Skill: Hearts Facts</h1>
     <h3 class="subtitle">An Amazon Alexa skill which tells you interesting facts about Heart Of Midlothian F.C.</h3>
     <br>
-    <div class="info">
-      <div>
-        <p class="info">
-            After seeing an advertisment for Alexa skills development on Facebook I thought I would give it a go.
-            First, I decided to do a tutorial provided on <a href="https://developer.amazon.com/alexa-skills-kit/start">this</a> page.
-            I selected the <a href="https://developer.amazon.com/alexa-skills-kit/tutorials/fact-skill-1">Fact Skill tutorial</a> and using
-            the information given in the tutorial and the template code I was able to create this skill.
-        </p>
-        <p class="info">
-            The skill I built is based around Heart of Midlothian Football Club and contains around 40 different facts
-            about the clubs history and honours as well as the great rivalry of the Edinburgh derby.  There were 6 steps
-            to the tutorial. First was getting things set up in the Amazon developer portal and creating a new Intent.
-            The intent had to be provided with key phrases which would prompt Alexa to reply, for example "Alexa, tell me
-            a hearts fact".  The next stage was to create a lambda function which stored the suitable replies. Step
-            three involved connecting the two, and steps 4 and 5 were testing and customising the skill.  Stage 6 was
-            applying for the skill to be certified and published, which I am now waiting to hear back from.  I hope that
-            this can be the first step of many in developing Amazon Alexa Skills.
-        </p>
-        <p class="info">
-            The source code for the intent (or Voice-User Interface) and the lambda function are available on Github.
-        </p>
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+        <div class="w3-card-4 w3-margin w3-white">
+          <br>
+          <div class="info">
+            <div>
+              <p align="left">
+                  After seeing an advertisment for Alexa skills development on Facebook I thought I would give it a go.
+                  First, I decided to do a tutorial provided on <a href="https://developer.amazon.com/alexa-skills-kit/start">this</a> page.
+                  I selected the <a href="https://developer.amazon.com/alexa-skills-kit/tutorials/fact-skill-1">Fact Skill tutorial</a> and using
+                  the information given in the tutorial and the template code I was able to create this skill.
+              </p>
+              <p align="left">
+                  The skill I built is based around Heart of Midlothian Football Club and contains around 40 different facts
+                  about the clubs history and honours as well as the great rivalry of the Edinburgh derby.  There were 6 steps
+                  to the tutorial. First was getting things set up in the Amazon developer portal and creating a new Intent.
+                  The intent had to be provided with key phrases which would prompt Alexa to reply, for example "Alexa, tell me
+                  a hearts fact".  The next stage was to create a lambda function which stored the suitable replies. Step
+                  three involved connecting the two, and steps 4 and 5 were testing and customising the skill.  Stage 6 was
+                  applying for the skill to be certified and published, which I am now waiting to hear back from.  I hope that
+                  this can be the first step of many in developing Amazon Alexa Skills.
+              </p>
+              <p align="left">
+                  The source code for the intent (or Voice-User Interface) and the lambda function are available on Github.
+              </p>
+            </div>
+          </div>
+          <div class="info">
+              <div class="proflink"><p>View this project on Github: </p><a target="blank" class="proflink" href="https://github.com/RonanS96/AlexaHeartsFacts" style="text-decoration:none;">
+                    <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                      <img src="github-mark.png" width="40" height="20" alt="View RonanS96 on Github" style="vertical-align:middle;" border="0">
+                          &nbsp;</span></a></div>
+              <li>
+          </div>
+          <br>
+        </div>
       </div>
-    </div>
-    <div class="info">
-        <div class="proflink"<p>View this project on Github: </p><a class="proflink" href="https://github.com/RonanS96/AlexaHeartsFacts" style="text-decoration:none;">
-              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                <img src="github-mark.png" width="40" height="20" alt="View RonanS96 on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a></div>
-        <li>
-    </div>
     <br>
     <!-- Template for navigation bar to be used on every page -->
     <div class="info">
