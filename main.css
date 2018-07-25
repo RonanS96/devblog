@@ -39,10 +39,15 @@ h1{
   text-align: center;
 }
 
+
 img.logo{
    width: 390px;
    height: 190px;
    float: none;
+ }
+
+ img.headerpic{
+   
  }
 
 .bullet{
@@ -53,5 +58,9 @@ img.logo{
   .nametitle{
       font-size: 45px;
       max-width: 100%;
+  }
+
+  img{
+    max-width: 100%;
   }
 }
