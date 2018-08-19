@@ -17,6 +17,23 @@
     <!-- End of Bootstrap links -->
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      .edu-image{
+        width: 50%;
+      }
+
+      @media screen and (max-width: 1200px){
+        .edu-image{
+          width: 90%;
+        }
+      }
+
+      @media screen and (max-width: 600px){
+        .edu-image{
+          width: 100%;
+        }
+      }
+    </style>
     <title>Ronan Smith</title>
   </head>
   <body class="w3-light-grey">
@@ -49,17 +66,26 @@
     <div class="w3-col">
       <!-- Blog entry -->
       <div class="w3-card-4 w3-margin w3-white">
-        <div class="w3-container">
-          <img src="img/HW.jpeg" alt="Heriot-Watt University" style="width:100%">
-          <h3><b>Heriot-Watt University (Sep 2014 - June 2018)</b></h3>
-          <h5><b>BSc Computer Science (HONS)</b></h5>
-          <h5>Edinburgh Campus, Edinburgh, EH14 4AS</h5>
+        <div class="w3-row">
+          <div class="w3-col m6 w3-center w3-padding-large">
+            <img class="edu-image" src="img/HW.jpeg" class="w3-round w3-image" title="Heriot-Watt University" alt="Heriot-Watt logo">
+          </div>
+
+          <!-- text -->
+          <div class="w3-col m6 w3-padding-large">
+            <div class="w3-container">
+              <h3><b>Heriot-Watt University (Sep 2014 - June 2018)</b></h3>
+              <h5><b>BSc Computer Science (HONS)</b></h5>
+              <h5>Edinburgh Campus, Edinburgh, EH14 4AS</h5>
+              <p>
+                I have now graduated with a First-Class Honours Degree.  The Heriot-Watt website is available <a target="_blank" href="https://www.hw.ac.uk/">here</a>.
+              </p>
+            </div>
+          </div>
         </div>
 
+
         <div class="w3-container">
-          <p>
-            I have now graduated with a First-Class Honours Degree.  The Heriot-Watt website is available <a target="_blank" href="https://www.hw.ac.uk/">here</a>.
-          </p>
           <div class="w3-row">
             <div class="w3-col m8 s12">
               <p><a href="grades/year4.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>Classes & Grades »</b></button></a></p>
@@ -69,27 +95,47 @@
       </div>
       <!-- End blog entry -->
       <hr>
-      <!-- Blog entry -->
-      <div class="w3-card-4 w3-margin w3-white">
-        <div class="w3-container">
-          <img src="img/WCHS.png" alt="West Calder High School" style="width:100%">
-          <h3><b>West Calder High School (Aug 2008 - June 2014)</b></h3>
-          <h5>Limefield, Polbeth, West Calder, EH55 8QN</h5>
-        </div>
-
-        <div class="w3-container">
-          <p>
-            I spent 6 years at WCHS achieving 6 standard grades, 2 Int 2s, an Int 1 and 8 Highers - 5 of which were with an A grade.
-            During my final year I was a prefect and a 'buddy' for the new first years.  I was also involved in the school football
-            team during 5th and 6th year. See the West Calder High School website <a target="_blank" href="http://www.wchs.org.uk/">here</a>.
-          </p>
+      <!-- Blog entries -->
+      <div class="w3-col">
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
           <div class="w3-row">
-            <div class="w3-col m8 s12">
-              <p><a href="grades/highschool.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>My Grades »</b></button></a></p>
+            <div class="w3-col m6 w3-center w3-padding-large">
+              <img style="width: 100%;" src="img/WCHS.png" class="w3-round w3-image" title="West Calder High School" alt="West Calder High School">
+            </div>
+
+            <!-- text -->
+            <div class="w3-col m6 w3-padding-large">
+                <div class="w3-container">
+                  <h3><b>West Calder High School (Aug 2008 - June 2014)</b></h3>
+                  <h5>Limefield, Polbeth, West Calder, EH55 8QN</h5>
+                </div>
+
+                <div class="w3-container">
+                  <p>
+                    I spent 6 years at WCHS achieving 6 standard grades, 2 Int 2s, an Int 1 and 8 Highers - 5 of which were with an A grade.
+                    During my final year I was a prefect and a 'buddy' for the new first years.  I was also involved in the school football
+                    team during 5th and 6th year. See the West Calder High School website <a target="_blank" href="http://www.wchs.org.uk/">here</a>.
+                  </p>
+                  <div class="w3-row">
+
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="w3-container">
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><a href="grades/highschool.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>My Grades »</b></button></a></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <!-- End blog entry -->
+      <!-- Blog entry -->
+
       <!-- End blog entry -->
     <!-- END ALL BLOG ENTRIES -->
     </div>
@@ -102,7 +148,7 @@
     <!-- END w3-content -->
 
     <br>
-    <p class="subtitle">* images are not my own</p>
+    
     <!-- Links to professional sites like GitHub and LinkedIn -->
     <div class="info">
       <div class="links">
