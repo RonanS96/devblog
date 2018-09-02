@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap links -->
@@ -46,24 +47,18 @@
             <div>
               <p align="left">
                  I have created a simple 'development blog' to show off some of my work as well as to post updates on my path
-                 through university.  In addition I will be writing some small articles on computer science related subjects,
-                the first of which is <a href="../article/formallanguages.html">Formal Languages</a>, which talks about what is meant
-                by the term 'formal language', what they are used for and how they are defined.
+                 through university and work.
                  If you are reading this, then my blog is working (at least partly).
               </p>
               <p align="left">
-                To get started, I am using static HTML pages where I can update blog items and information on my university
-                and personal projects simply through editing the source code.  Each page should follow the same style as the others
-                and each page will contain a navigation bar at the top and bottom so you can move between pages on the site with ease.
-                The consistent style of the webpages is controlled through a main CSS file.
+                It has been built using HTML, CSS and JavaScript, and currently runs as a static website with no database connection.
+                Originally these were just working alone but now the Bootstrap and W3.CSS frameworks are helping out with style as well.
+                In terms of style I have went with a dark theme, however I have added more colour over time. Style consistency and
+                responsiveness to screen sizes are also important to me and so I have tried to apply the relevant features as much as
+                possible.
               </p>
               <p align="left">
-                Over time I will look to improve the site so that the blog can be updated via some user interface and will store information
-                in a database.
-              </p>
-              <p align="left">
-                To begin with, I decided to code from scratch, i.e not using any templates or frameworks, however in a recent update I did
-                improve the interface by using some HTML code from the W3SChools 'blog' template.
+                The site is being hosted using Amazon Web Services (AWS), with a secure connection being implemented through Amazon CloudFront.
               </p>
             </div>
           </div>
@@ -79,25 +74,20 @@
       </div>
 
     <br>
-    <div class="info">
-      <div class="links">
-        <div class="proflink"><a target="_blank" href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" style="text-decoration:none;">
-            <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-              <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Ronan Smith's LinkedIn profile" style="vertical-align:middle;" border="0">
-                &nbsp;</span></a>
+    <footer class="w3-center w3-black w3-padding-16">
+      <div class="w3-xlarge w3-section">
+        <h4 id="date">Ronan J. Smith • 2018</h4>
+        <div class="links">
+          <div class="proflink"><a href="https://uk.linkedin.com/pub/ronan-smith/a6/a7/347" target="_blank"><i style="font-size:30px;color:#0077B5;" class="fa fa-linkedin w3-hover-opacity"></i></a></div>
+          <div class="proflink"><a href="https://github.com/RonanS96/" target="_blank"><i style="font-size:30px;color:white;" class="fa fa-github w3-hover-opacity"></i></a></div>
+          <div class="proflink"><a href="https://twitter.com/RJSmith143" target="_blank"><i style="font-size:30px;color:#1dcaff;" class="fa fa-twitter w3-hover-opacity"></i></a></div>
         </div>
-        <div class="proflink"><a target="_blank" href="https://github.com/RonanS96/" style="text-decoration:none;">
-              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                <img src="../projects/github-mark.png" width="20" height="20" alt="View this project on Github" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a>
-        </div>
-        <div class="proflink"><a target="_blank" href="https://twitter.com/RJSmith143" style="text-decoration:none;">
-              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                <img src="../img/twitter.png" width="20" height="20" alt="View my public Twitter profile" style="vertical-align:middle;" border="0">
-                    &nbsp;</span></a>
-        </div>
+        <h4 id="clock"></h4>
       </div>
-    </div>
-    <br>
+      <div class="info">
+        <!--<a target="_blank" title="Powered by AWS" href="https://aws.amazon.com/"><img src="img/powered-by-Amazon.png" height="50" width="90"></img></a>-->
+      </div>
+      <script src="../clock.js"></script>
+    </footer>
   </body>
 </html>
