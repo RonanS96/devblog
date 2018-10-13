@@ -21,17 +21,19 @@
     <title>Ronan Smith</title>
   </head>
   <body class="w3-light-grey">
-    <!-- Template for navigation bar to be used on every page -->
-    <div id="nav" class="navbar">
-      <ul>
-        <li class="dropdown" id="dropdown"><a><img src="img/drop-down.png" height="20" width="35"></img></a></li>
-        <li><a href="index.html" id="nav-dropdown">Ronan J. Smith</a></li>
-        <li class="fright" id="nav-dropdown"><a href="about.html">About Me</a></li>
-        <li class="fright" id="nav-dropdown"><a href="education.html">Education</a></li>
-        <li class="fright" id="nav-dropdown"><a href="resources.html">Resources</a></li>
-        <li class="fright" id="nav-dropdown"><a href="projects/all.html">Projects</a></li>
-      </ul>
+    <!-- Responsive navigation bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Ronan J. Smith</a>
+      <a class="right" href="about.html">About Me</a>
+      <a class="right" href="resources.html">Resources</a>
+      <a class="right" href="education.html">Education</a>
+      <a class="right" href="projects/all.html">Projects</a>
+      <a class="right" href="index.html">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i id="navButton" class="fa fa-bars"></i>
+      </a>
     </div>
+    <script src="navButton.js"></script>
     <br>
     <br>
     <!-- Template for navigation bar END -->
@@ -55,7 +57,7 @@
 
         <div class="w3-container">
           <p align="center">
-            I am using AWS to host this website.
+            A secure cloud storage platform that can be used for web hosting. I am using AWS to host this website.
           </p>
           <div class="w3-row">
             <div class="w3-col m8 s12">
@@ -74,7 +76,7 @@
 
         <div class="w3-container">
           <p align="center">
-            My text editor of choice for writing source code.
+            A handy, open source text editor for developing software. Atom comes with the ability to customise your experience with lots of plugins available.
           </p>
           <div class="w3-row">
             <div class="w3-col m8 s12">
@@ -151,7 +153,7 @@
 
         <div class="w3-container">
           <p align="center">
-            Useful IDE (Integrated Development Environment) which I have used for coding in Java and Python.
+            A useful IDE (Integrated Development Environment) which I used for coding in Java and Python in university.
           </p>
           <div class="w3-row">
             <div class="w3-col m8 s12">
@@ -175,6 +177,44 @@
           <div class="w3-row">
             <div class="w3-col m8 s12">
               <p><a target="_blank" href="https://github.com/"><button class="w3-button w3-padding-large w3-white w3-border"><b>Available here »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3 align="center"><b>Git Bash</b></h3>
+        </div>
+
+        <div class="w3-container">
+          <p align="center">
+            My choice of command line application to accompany GitHub.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="https://gitforwindows.org/"><button class="w3-button w3-padding-large w3-white w3-border"><b>Available here »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3 align="center"><b>IntelliJ IDEA</b></h3>
+        </div>
+
+        <div class="w3-container">
+          <p align="center">
+            Another useful IDE for developing software in Java. This one is developed by JetBrains who have also developed a number of different IDEs.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="https://www.jetbrains.com/idea/"><button class="w3-button w3-padding-large w3-white w3-border"><b>Available here »</b></button></a></p>
             </div>
           </div>
         </div>
@@ -300,6 +340,26 @@
       <!-- Blog entry -->
       <div class="w3-card-4 w3-margin w3-white">
         <div class="w3-container">
+          <h3 align="center"><b>Trello</b></h3>
+        </div>
+
+        <div class="w3-container">
+          <p align="center">
+            If you're working in a team, Trello is a fantastic online resource for sharing documents and discussions with everyone involved.
+            It is great for collaboration and can be used in different ways depending on the project you are working on.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="https://trello.com/"><button class="w3-button w3-padding-large w3-white w3-border"><b>Available here »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
           <h3 align="center"><b>VisuAlgo</b></h3>
         </div>
 
@@ -332,6 +392,25 @@
           <div class="w3-row">
             <div class="w3-col m8 s12">
               <p><a target="_blank" href="https://www.visualstudio.com/"><button class="w3-button w3-padding-large w3-white w3-border"><b>Available here »</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End blog entry -->
+      <hr>
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+          <h3 align="center"><b>Visual Studio Code</b></h3>
+        </div>
+
+        <div class="w3-container">
+          <p align="center">
+            A more lightweight alternative to Visual Studio. Visual Studio Code is a text-editor that is great for web development.
+          </p>
+          <div class="w3-row">
+            <div class="w3-col m8 s12">
+              <p><a target="_blank" href="https://code.visualstudio.com/"><button class="w3-button w3-padding-large w3-white w3-border"><b>Available here »</b></button></a></p>
             </div>
           </div>
         </div>
