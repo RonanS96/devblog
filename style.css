@@ -50,7 +50,6 @@ ul {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
-
     }
 
     .topnav a.right {
@@ -60,6 +59,10 @@ ul {
     .topnav a:hover {
       background-color: #1E90FF;
       font-weight: bold;
+    }
+
+    .topnav a.icon:hover {
+      background-color: black;
     }
 
     .active {

@@ -3,10 +3,13 @@ function startTime() {
   let hours = today.getHours();
   let minutes = today.getMinutes();
   let seconds = today.getSeconds();
-  let year = today.getYear();
+  let year = today.getYear() + 1900; 
   minutes = checkTime(minutes);
   seconds = checkTime(seconds);
+
+  document.getElementById('date').innerHTML = "Ronan J. Smith • " + year;
   document.getElementById('clock').innerHTML = hours + ":" + minutes + ":" + seconds;
+
   let t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
